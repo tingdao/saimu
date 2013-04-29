@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /post/
+Disallow: /forum/
+Disallow: /wp-*
+Disallow: /20*
+
+Sitemap: http://samuel.tingdao.org/sitemap.xml

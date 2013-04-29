@@ -1,0 +1,204 @@
+@import 'base.css';
+
+body {
+  font-size: 1.1em;
+  lne-height: 1.2;
+  color:#E0E2E4;background:#293134; 
+/*color:#657A81;background:#FDF6E3;*/
+}
+body, button, input, select, textarea { font-family: Lucida Sans Unicode, Lucida Grande, Tohoma,  Microsoft Yahei, \5E7C\5706, sans-serif; }
+
+h1,h2,h3,h4,h5,h6 {
+  font-size: 1em;
+  font-weight: normal;
+  font-style: normal;
+  margin: 0;
+  color: #EC7600;
+}
+
+small, .small{
+  font-size: 0.75em;
+}
+
+a, a:hover, a:visited {
+  color: #93C763; /*#A082BD; /*#CAE682;*/
+  text-decoration: none;
+}
+
+a:hover {
+text-decoration: underline;
+}
+
+pre {
+  margin-bottom: 1.625em;
+}
+
+::selection { background: #804000; color: #E0E2E4; text-shadow: none; }
+
+/*************************************/
+1
+1.618
+2.618
+4.236
+
+
+/*************************************/
+
+#page {
+padding: 0.2em;
+}
+footer p, nav p, .nav p {
+margin: 0;
+padding: 0;
+}
+
+#header, #footer, h1, h2 {
+font-family: Lucida Sans Unicode, Lucida Grande, Tohoma, \5E7C\5706, Microsoft Yahei, sans-serif; 
+}
+
+#header h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4.2em;  
+}
+#header h1 a:visited, #header h1 a, #header h1 a:hover {
+  color: gold; /*#fa8072;*/
+}
+
+#header h1::after{
+content: "@听稻";
+height: 10px;
+color: #fa8072;
+font-size: .618em;
+}
+#header h1 a:hover{
+text-decoration: none;
+border-bottom: 3px solid;
+}
+nav, #footer {
+  text-transform: uppercase;
+}
+nav ul, .nav ul {
+  list-style: none;
+}
+nav ul li, .nav ul li{
+  display :inline; 
+}
+
+article{
+max-width: 35em;
+}
+
+article h1{
+  font-size: 2.6em;
+  text-align: left;
+  padding: 1em 0 .7em 0;
+}
+article h2{
+  font-size: 1.618em;
+  margin-top: .7em;
+  margin-bottom: .3em;
+  
+}
+article h3 {
+  font-size: 1em;
+  margin-top: .7em;
+  margin-bottom: .3em;
+  font-weight: bold;
+}
+article h4 {
+  font-size: 1em;
+  font-style: italic;
+}
+
+.text p {
+margin-bottom: 1.6em;
+}
+.text a:hover{ 
+text-decoration: underline;
+}
+
+q,code,em, strong {
+color: #678CB1;
+}
+
+pre, blockquote{
+padding-left: 2em;
+padding-right: 2em;
+font-size: 1em;
+border-left: 7px solid #678CB1;
+border-right: 7px solid #678CB1;
+}
+
+/*
+article nav, article nav a{
+color: #FF8BFF;
+font-weight: bold;
+}*/
+nav a, nav a:visited, nav a:hover {
+color: orange;/*#FFCD22;*/
+}
+article footer nav {
+font-size: 1em;
+font-weight: bold;
+text-decoration: none;
+}
+article nav a, article nav a:visited, article nav a:hover {
+color: #FFCD22;
+}
+.meta{
+color: #B3B784;
+padding-top: 2em;
+}
+span.meta{padding-left: 1em; font-size: .618em;}
+
+article footer nav{
+padding-top: 1em;
+}
+
+#footer {
+color: #7D8C93;
+padding-top: 3em;
+padding-bottom: 1em;
+}
+
+.text ul, .text ol{
+padding-left: 2em;
+}
+
+.text {
+line-height: 1.618;
+}
+
+.active a{
+font-size: 1.618em;
+}
+
+.list a > span {
+color: #B3B784;
+font-size: 0.8em;
+}
+.list a > span::before {
+content: "(";
+}
+.list a > span::after {
+content: ")";
+}
+
+.date{
+font-family: Lucida Console, Monaco, Courier New, mono, monospace;
+}
+
+@media only screen and (min-width: 240px) {
+
+  #page {
+  padding: .2em 2em;
+  }
+  h1,h2,h3,h4,h5,h6 {
+  margin-left: -36px;
+  }
+  article {
+  padding-left: 36px;  
+  }
+
+}

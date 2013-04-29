@@ -1,0 +1,27 @@
+markdown: redcarpet
+redcarpet:
+  extensions: [fenced_code_blocks, autolink, tables,  hard_wrap, with_toc_data, strikethrough, lax_spacing, superscript]
+
+permalink: /post/:year:month:day/
+exclude: ["README.md", "Rakefile"]
+auto: true
+pygments: false
+future: false
+
+title : 塞牧
+tagline: "@听稻"
+author :
+  name : "@pftsao"
+
+url: http://samuel.tingdao.org
+
+path :
+  assets : /assets
+  archive: /archive
+  cats : /categories
+  tags: /tags
+  feed : http://feeds.tingdao.org/pftsao
+  js : /assets/js
+  css: /assets/css
+  
+copyright: "© 2012 塞牧 Some rights reserved."

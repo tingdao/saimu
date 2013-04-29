@@ -1,0 +1,15 @@
+<span class="post-meta">
+{% assign category_list = meta-list.categories %}
+{% if category-list.first[0] == null %}
+{% for category in category-list %}<a>{{ category | join: "/" }}</a>
+{% endfor %}
+{% else %}{% for category in category-list %}<a>{{ category[0] | join: "/" }}</a>
+{% endfor %}{% endif %}
+{% assign category-list = nil %}
+
+{% assign tag_list = the-post.tags %}
+{% if tag-list.first[0] == null %}{% for tag in tag-list %}<a >{{ tag }}</a>
+{% endfor %}
+{% else %}{% for tag in tag-list %}<a>{{ tag[0] }}</a>
+{% endfor %}{% endif %}{% assign tag_list = nil %}
+</span>

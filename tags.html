@@ -1,0 +1,17 @@
+---
+layout: page
+title: Tags
+header: Posts By Tag
+group: navigation
+permalink: /tags/
+---
+<nav><ul class="tag list">
+  {% assign tag-list = site.tags %}{% include tag-list %}
+</ul></nav>
+<div class="page list">
+{% for tag in site.tags %}
+  <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+  <ul>
+  {% assign page-list = tag[1] %}{% include page-list %}  </ul>
+{% endfor %}
+</div>
