@@ -3,11 +3,11 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="author" content="{{ site.author.name }}">
 <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-
 <title>{% if page.title %}{{ page.title }} - {% endif %}{{ site.title }}{% if page.tagline %}{{ page.tagline}}{% endif %}</title>
 <!--[if lt IE 9]>
 <script src="{{ site.path.js }}/html5shiv.js"></script>
 <![endif]-->
+<script src="{{ site.path.js }}/main.js"></script>
 <link href="{{ site.path.css }}/style.css" rel="stylesheet" media="all">
 <link href="{{ site.path.feed }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml">
 <link rel="shortcut icon" href="{{ site.path.assets }}favicon.ico" type="image/x-icon">
@@ -37,14 +37,3 @@
 </footer>
 
 </div><!-- page -->
-<script type="text/javascript">
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-26697966-1']);
-_gaq.push(['_setDomainName', 'tingdao.org']);
-_gaq.push(['_trackPageview']);
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
-</script>
