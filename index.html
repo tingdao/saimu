@@ -3,8 +3,6 @@ layout: page
 tagline: "@听稻"
 ---
 
-塞牧@听稻
-
 <ul class="posts home">
 {% for post in site.posts limit:7 %}
   <li {% if forloop.first %} class="active"{% endif %}><span class="date">{{ post.date | date_to_string }}</span> 
