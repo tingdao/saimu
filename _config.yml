@@ -8,7 +8,7 @@ auto: true
 pygments: false
 future: false
 
-title : 在木
+title : 塞牧
 tagline: "@听稻"
 author :
   name : "@pftsao"
@@ -24,4 +24,4 @@ path :
   js : /assets/js
   css: /assets/css
   
-copyright: "© 2012 在木 Some rights reserved."
+copyright: "© 2012 塞牧 Some rights reserved."
