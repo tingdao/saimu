@@ -10,8 +10,6 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 }
 body { font-size: 1em; line-height: 1.2; -webkit-tap-highlight-color: rgba(255,0,0, 0.62); }
 body, button, input, select, textarea { font-family:   Tahoma, Helvetica, Arial, Microsoft Yahei, sans-serif; }
-::-moz-selection { background: #073642; color: #fff; text-shadow: none; }
-::selection { background: #073642; color: #fff; text-shadow: none; }
 
 abbr[title] { border-bottom: 1px dotted; }
 b, strong { font-weight: bold; }
