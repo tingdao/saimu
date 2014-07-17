@@ -8,8 +8,16 @@ auto: true
 pygments: false
 future: false
 
-title : 塞牧
-tagline: "@听稻"
+defaults:
+  -
+    scope:
+      path: "" # an empty string here means all files in the project
+      type: "post"
+    values:
+      layout: "post"
+
+title : Samuel
+tagline: "@tingdao"
 author :
   name : "@pftsao"
 
