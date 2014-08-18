@@ -8,6 +8,14 @@ auto: true
 highlighter: null
 future: false
 
+defaults:
+  -
+    scope:
+      path: "_posts"
+      type: "posts"
+    values:
+      layout: "post"
+
 title : Samuel
 tagline: "@tingdao"
 author :
