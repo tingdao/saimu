@@ -19,6 +19,13 @@ title : RSS Feed
                 <link>{{ site.url }}{{ post.url }}</link>
                 <guid>{{ site.url }}{{ post.url }}</guid>
                 <pubDate>{{ post.date | date_to_xmlschema }}</pubDate>
+				{% for category in post.categories %}
+					<category>{{ category }}</category>
+				{% endfor %}
+				{% for category in post.tags %}
+					<category>{{ category }}</category>
+				{% endfor %}
+				
         </item>
 {% endfor %}
 
