@@ -192,9 +192,10 @@ font-family: Lucida Console, Monaco, Courier New, mono, monospace;
   #page {
   padding: .2em .2em;
   }
+
 }
 
-@media all and (min-width: 360px) and (max-width: 500px) {
+@media all and (min-width: 360px) and (max-width: 600px) {
 
   #page {
   padding: .2em .8em;
@@ -207,11 +208,11 @@ font-family: Lucida Console, Monaco, Courier New, mono, monospace;
   }
 pre, blockquote{
 padding-left: .5em;
+margin: .5em;
+}
 }
 
-}
-
-@media all and (min-width: 500px) {
+@media all and (min-width: 600px) {
 
   #page {
   padding: .2em 2em;
@@ -226,6 +227,7 @@ padding-left: .5em;
 pre, blockquote{
 padding-left: 2em;
 padding-right: 2em;
+margin: 1em;
 }
 
 }
