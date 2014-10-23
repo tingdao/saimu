@@ -16,8 +16,8 @@ defaults:
     values:
       layout: "post"
 
-title : 塞牧
-tagline: "@tingdao"
+title : 在木
+tagline: "---"
 author :
   name : "@pftsao"
 
@@ -32,4 +32,4 @@ path :
   js : /assets/js
   css: /assets/css
   
-copyright: "© 2012 塞牧 Some rights reserved."
+copyright: "©塞牧.在木.听稻. 2006. All rights reserved."
