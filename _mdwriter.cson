@@ -39,12 +39,9 @@ frontMatterDate: "{year}-{month}-{day}"
 frontMatter: """
 ---
 title: {title}
-layout: post
-published: true
 category: 圣经神学
 tags: ☆
 ---
-
 """
 
 # file extension of posts/drafts
