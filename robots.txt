@@ -3,4 +3,4 @@ Allow: /post/
 Disallow: /forum/
 Disallow: /wp-*
 
-Sitemap: http://saimu.tingdao.org/sitemap.xml
+Sitemap: http://zaimu.tingdao.org/sitemap.xml

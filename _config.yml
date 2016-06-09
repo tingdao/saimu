@@ -6,7 +6,7 @@ permalink: /post/:year:month:day/
 exclude: ["README.md", "Rakefile"]
 auto: true
 highlighter: null
-future: false
+future: true
 
 defaults:
   -
@@ -21,7 +21,7 @@ tagline: "---"
 author :
   name : "@pftsao"
 
-url: http://samuel.tingdao.org
+url: http://zaimu.tingdao.org
 
 path :
   assets : /assets
