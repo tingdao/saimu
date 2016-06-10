@@ -1,11 +1,11 @@
 ---
 layout: page
-tagline: "@听稻"
+tagline: ".{{ site.tagline }}"
 ---
 
 <ul class="posts home">
 {% for post in site.posts limit:7 %}
-  <li {% if forloop.first %} class="active"{% endif %}><span class="date">{{ post.date | date_to_string }}</span> 
+  <li {% if forloop.first %} class="active"{% endif %}><span class="date">{{ post.date | date_to_string }}</span>
   <a href="{{ post.url }}">{{ post.title }}</a><span class="meta">[{{ post.categories | join: "/"}}],[{{ post.tags | join: "|" }}]</span>
   </li>
 {% endfor %}

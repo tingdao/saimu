@@ -16,10 +16,10 @@ defaults:
     values:
       layout: "post"
 
-title : "塞牧"
-tagline: "---"
+title : "@塞牧"
+tagline: "稻花香里听丰年"
 author :
-  name : "@pftsao"
+  name : "@塞牧"
 
 url: http://saimu.tingdao.org
 
