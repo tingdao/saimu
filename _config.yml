@@ -16,12 +16,12 @@ defaults:
     values:
       layout: "post"
 
-title : "在木"
+title : "塞牧"
 tagline: "---"
 author :
   name : "@pftsao"
 
-url: http://zaimu.tingdao.org
+url: http://saimu.tingdao.org
 
 path :
   assets : /assets
