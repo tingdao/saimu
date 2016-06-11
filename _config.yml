@@ -1,4 +1,4 @@
-markdown: redcarpet
+markdown: kramdown
 redcarpet:
   extensions: [fenced_code_blocks, autolink, tables,  hard_wrap, with_toc_data, strikethrough, lax_spacing, superscript]
 
