@@ -1,8 +1,8 @@
 ---
 layout: nil
 ---
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="utf-8"?>
+<urlset>
   {% for post in site.posts %}
   <url>
     <loc>{{ site.url }}{{ post.url }}</loc>
@@ -11,7 +11,7 @@ layout: nil
     {% else %}
     <lastmod>{{ post.lastmod | date_to_xmlschema }}</lastmod>
     {% endif %}
-    <changefreq>monthly</changefreq>
+    <changefreq>weekly</changefreq>
     <priority>{% if post.priority %}{{ post.priority }}{% elsif post.tags contains '☆' %}1{% elsif post.categories.size == 0 %}0{% else %}0.5{% endif %}</priority>
   </url>
   {% endfor %}
