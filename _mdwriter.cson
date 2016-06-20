@@ -14,7 +14,7 @@ siteLocalDir: ""
 # directory to drafts from siteLocalDir
 siteDraftsDir: "_drafts/"
 # directory to posts from siteLocalDir
-sitePostsDir: "_posts/{year}/"
+sitePostsDir: "_posts/"
 # directory to images from siteLocalDir
 siteImagesDir: "img/"
 
@@ -39,7 +39,6 @@ frontMatterDate: "{year}-{month}-{day}"
 frontMatter: """
 ---
 title: {title}
-category: 圣经神学
 tags: ☆
 ---
 """
