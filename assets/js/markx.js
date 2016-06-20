@@ -38,7 +38,7 @@ var t = $("pre > code").each(
 
 		for(var i =0; i< t.length; i++){
 			// console.log(t[i])
-      if(!i){r+='<br/>'}
+      if(i){r+='<br/>'}
 			var ti = t[i]
 			var level = getLevel(ti)
 			var si = ti.trim()
