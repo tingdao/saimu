@@ -12,7 +12,7 @@
 .x{display: table-cell;}
 
 blockquote p{
-  white-space: pre;
+  white-space: pre-line;
 }
 
 table{
