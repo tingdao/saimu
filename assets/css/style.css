@@ -9,6 +9,14 @@
 .x6{color: #93C763}
 .x7{color: black}
 
+table{
+  margin-left: 2em
+}
+
+td{
+  border: solid grey 1px;
+ }
+
 body {
   font-size: 1.1em;
   lne-height: 1.2;
