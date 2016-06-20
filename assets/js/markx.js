@@ -42,10 +42,20 @@ var t = $("pre > code").each(
 			var ti = t[i]
 			var level = getLevel(ti)
 			var si = ti.trim()
-			ti = ti.replace(/\s/g, '&nbsp')
-			r+='<span class="x'+level%6+'">'+ti+'</span>'
+			// ti = ti.replace(/\s/g, '&nbsp')
+      var left_length = (ti || '').length-(si || '').length
+      var space = ''
+      for (var s = 0; s <left_length; s++){
+        space += '&nbsp'
+      }
+
+			// r+='<ul><li class="x-space"><pre>'+space+'</pre></li><li class="x x'+level%5+'">'+si+'</li></ul>'
+
+      // r+='<span class="x x'+level%5+'" style="margin-left:'+left_length/2+'em">'+si+'</span>'
+      r+='<span><span class="x">'+space+'</span><span class="x x'+level%5+'">'+si+'</span></span>'
+
 		}
-		p.replaceWith('<blockquote><p class="markx">'+r+'</p></blockquote>')
+		p.replaceWith('<blockquote class="markx"><p>'+r+'</p></blockquote>')
 		console.log( r)
 		// console.log(this)
 	}
