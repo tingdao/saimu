@@ -1,4 +1,7 @@
 markdown: kramdown
+kramdown:
+  input: GFM
+
 redcarpet:
   extensions: [fenced_code_blocks, autolink, tables,  hard_wrap, with_toc_data, strikethrough, lax_spacing, superscript]
 
@@ -15,6 +18,37 @@ defaults:
       type: "posts"
     values:
       layout: "post"
+  -
+    scope:
+      path: "page"
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: "_posts/圣经"
+    values:
+      category: 圣经
+  -
+    scope:
+      path: "_posts/翻译"
+    values:
+      category: 翻译
+  -
+    scope:
+      path: "_posts/随笔"
+    values:
+      category: 随笔
+  -
+    scope:
+      path: "_posts/教会"
+    values:
+      category: 教会
+  -
+    scope:
+      path: "_posts/其它"
+    values:
+      category: 其它
 
 title : "[在木]"
 tagline: "稻花香里听丰年"
