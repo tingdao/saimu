@@ -10,7 +10,7 @@
 .x7{color: black}
 
 table{
-  margin-left: 2em
+  margin-left: 2em;
   border: solid grey 2px;
 }
 td{
@@ -139,10 +139,10 @@ q,code,em, strong {
 color: #678CB1;
 }
 
-pre, blockquote, x{
+pre, blockquote, .x{
 font-size: 1em;
 border-left: 7px solid #678CB1;
-border-right: 7px solid #678CB1;
+/*border-right: 7px solid #678CB1;*/
 }
 
 /*
