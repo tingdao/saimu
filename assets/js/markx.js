@@ -37,24 +37,16 @@ var t = $("pre > code").each(
 		var r = "";
 
 		for(var i =0; i< t.length; i++){
-			console.log(t[i])
+			// console.log(t[i])
+      if(!i){r+='<br/>'}
 			var ti = t[i]
 			var level = getLevel(ti)
 			var si = ti.trim()
 			ti = ti.replace(/\s/g, '&nbsp')
-
-			r+='<br/><span class="x'+level%6+'">'+ti+'</span>'
-
+			r+='<span class="x'+level%6+'">'+ti+'</span>'
 		}
-
-
-
-		p.replaceWith('<div>'+r+'</div>')
+		p.replaceWith('<p>'+r+'</p>')
 		console.log( r)
 		// console.log(this)
-
-
 	}
-
 	)
-
