@@ -31,9 +31,9 @@ defaults:
       category: 圣经
   -
     scope:
-      path: "_posts/翻译"
+      path: "_posts/查经"
     values:
-      category: 翻译
+      category: 查经
   -
     scope:
       path: "_posts/随笔"
