@@ -45,7 +45,7 @@ var t = $("pre > code").each(
 			ti = ti.replace(/\s/g, '&nbsp')
 			r+='<span class="x'+level%6+'">'+ti+'</span>'
 		}
-		p.replaceWith('<p class="x">'+r+'</p>')
+		p.replaceWith('<blockquote><p class="markx">'+r+'</p></blockquote>')
 		console.log( r)
 		// console.log(this)
 	}
