@@ -3,6 +3,9 @@ kramdown:
   input: GFM
   hard_wrap: true
   parse_block_html: true
+  enable_coderay: false
+
+highlighter: false
 
 #
 # redcarpet:
@@ -15,9 +18,9 @@ highlighter: null
 future: false
 
 collections:
-  stack:
+  beta:
     output: true
-    permalink: /stack/:year:month:day/
+    permalink: /beta/:year:month:day/
 
 defaults:
   -
@@ -33,7 +36,7 @@ defaults:
       layout: "page"
   -
     scope:
-      path: _stack
+      path: _beta
     values:
       layout: page
   -
