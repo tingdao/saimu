@@ -18,9 +18,18 @@ for (var key in _sitemap){
 $("p code").each(
 	function(index){
 		var title = $(this).text()
-    var url = sitemap[text_clear(title)]
+    var ct = text_clear(title)
+    var url = sitemap[ct]
+    if(!url){
+      for (var key in sitemap){
+        if(key.indexOf(ct)>=0){
+        url = sitemap[key]
+        break
+      }
+      }
+    }
     if(url){
-		$(this).replaceWith('<a src="'+url+'">'+title+'</a>')
+		$(this).replaceWith('<a href="'+url+'">'+title+'</a>')
   }
 		console.log( title)
 	}
