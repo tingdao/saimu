@@ -15,13 +15,13 @@ blockquote p{
   /*white-space: pre-line;*/
 }
 
-table{
-  margin-left: 2em;
-  border: solid grey 2px;
+table, th, td{
+  /*margin-left: 2em;*/
+  border: solid #678CB1 1px;
 }
-th, td{
+/*th, td{
   border: solid grey 1px;
-}
+}*/
 
 body {
   font-size: 1.1em;
@@ -145,7 +145,7 @@ q,code,em, strong {
 color: #678CB1;
 }
 
-pre, blockquote{
+pre, blockquote, table{
 font-size: 1em;
 border-left: 7px solid #678CB1;
 /*border-right: 7px solid #678CB1;*/
@@ -229,7 +229,7 @@ font-family: Lucida Console, Monaco, Courier New, mono, monospace;
   article {
   padding-left: 12px;
   }
-pre, blockquote{
+pre, blockquote, table{
 padding-left: .5em;
 margin: .5em;
 }
@@ -247,7 +247,7 @@ margin: .5em;
   padding-left: 36px;
   }
 
-pre, blockquote{
+pre, blockquote, table{
 padding-left: 1em;
 padding-right: 1em;
 margin: 1em;
