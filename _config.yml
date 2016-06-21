@@ -14,6 +14,11 @@ auto: true
 highlighter: null
 future: false
 
+collections:
+  stack:
+    output: true
+    permalink: /stack/:month:day/
+
 defaults:
   -
     scope:
@@ -24,9 +29,13 @@ defaults:
   -
     scope:
       path: "page"
-      type: "pages"
     values:
       layout: "page"
+  -
+    scope:
+      path: _stack
+    values:
+      layout: page
   -
     scope:
       path: "_posts/圣经"
