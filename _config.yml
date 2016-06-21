@@ -17,7 +17,7 @@ future: false
 collections:
   stack:
     output: true
-    permalink: /stack/:month:day/
+    permalink: /stack/:year:month:day/
 
 defaults:
   -
