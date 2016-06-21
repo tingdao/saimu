@@ -1,3 +1,4 @@
+(function(){
 var LINE_ENDING = '\r',
 LINE_ENDING_SPLITER = /\r\n|\r|\n/
 
@@ -14,7 +15,7 @@ var TABREG = new RegExp('^('+ String.fromCharCode(32) +'|'+ String.fromCharCode(
     }
 
 
-var t = $("pre > code").each(
+$("pre > code").each(
 	function(index){
 		var e = $(this)
 		var p = e.parent()
@@ -24,7 +25,7 @@ var t = $("pre > code").each(
 
 		// .replace(/\s{2}/g, "+")
 
-		console.log(text)
+		// console.log(text)
 
 		// var tn = (text.match(/p/g) || []).length
 		// var tn2 = (text.match(/pp/g) || []).length
@@ -56,7 +57,9 @@ var t = $("pre > code").each(
 
 		}
 		p.replaceWith('<blockquote class="markx"><p>'+r+'</p></blockquote>')
-		console.log( r)
+		// console.log( r)
 		// console.log(this)
 	}
 	)
+
+})()
