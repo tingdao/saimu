@@ -1,6 +1,7 @@
 ---
 layout: nil
 title : RSS Feed
+permalink: /export.xml
 ---
 
 <?xml version="1.0" encoding="UTF-8" ?>
@@ -25,7 +26,7 @@ title : RSS Feed
 				{% for category in post.tags %}
 					<category>{{ category }}</category>
 				{% endfor %}
-				
+
         </item>
 {% endfor %}
 
