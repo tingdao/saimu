@@ -88,9 +88,9 @@ textStyles:
   strikethrough:
     before: "~~", after: "~~"
   codeblock:
-    before: "\n~~~\n"
+    before: "~~~\n"
     after: "\n~~~"
-    regexBefore: "\\n~~~(?:[\\w- ]+)?\\n"
+    regexBefore: "~~~(?:[\\w- ]+)?\\n"
     regexAfter: "\\n~~~"
 
 lineStyles:
