@@ -3,20 +3,27 @@ layout: nil
 permalink:
 ---
 
-window._sitemap = {
+window.__sitemap = {
 {% for post in site.posts %}'{{ post.title }}':'{{ post.url }}',{% endfor %}
 }
 
 function text_clear(text){
   return (text||'').replace(/[\[\]\-\+\_\'\"\<\>\s]/g,'')
 }
-window.sitemap = {}
-for (var key in _sitemap){
-  sitemap[text_clear(key)] = _sitemap[key]
+function get_sitemap(){
+  if(!window.sitemap){
+    for (var key in _sitemap){
+      window.sitemap = {}
+      window.sitemap[text_clear(key)] = _sitemap[key]
+    }
+  }
+  return window.sitemap
 }
+
 
 $("p code").each(
 	function(index){
+    var sitemap = get_sitemap()
 		var title = $(this).text()
     var ct = text_clear(title)
     var url = sitemap[ct]
