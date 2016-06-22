@@ -18,9 +18,9 @@ highlighter: null
 future: false
 
 collections:
-  beta:
+  stack:
     output: true
-    permalink: /beta/:year:month:day/
+    permalink: /stack/:year:month:day/
 
 defaults:
   -
@@ -36,7 +36,7 @@ defaults:
       layout: "page"
   -
     scope:
-      path: _beta
+      path: _stack
     values:
       layout: page
   -
