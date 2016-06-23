@@ -3,7 +3,7 @@ layout: nil
 permalink:
 ---
 
-window.__sitemap = {
+window._sitemap0 = {
 {% for post in site.posts %}'{{ post.title }}':'{{ post.url }}',{% endfor %}
 }
 
@@ -11,13 +11,13 @@ function text_clear(text){
   return (text||'').replace(/[\[\]\-\+\_\'\"\<\>\s]/g,'')
 }
 function get_sitemap(){
-  if(!window.sitemap){
-    for (var key in _sitemap){
-      window.sitemap = {}
-      window.sitemap[text_clear(key)] = _sitemap[key]
+  if(!window._sitemap){
+    window._sitemap = {}
+    for (var key in _sitemap0){
+      window._sitemap[text_clear(key)] = _sitemap0[key]
     }
   }
-  return window.sitemap
+  return window._sitemap
 }
 
 
@@ -38,6 +38,6 @@ $("p code").each(
     if(url){
 		$(this).replaceWith('<a href="'+url+'">'+title+'</a>')
   }
-		console.log( title)
+		// console.log( title)
 	}
 )
