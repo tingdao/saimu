@@ -5,11 +5,10 @@ kramdown:
   parse_block_html: false
   enable_coderay: false
 
-highlighter: false
-
 #
 # redcarpet:
 #   extensions: [fenced_code_blocks, autolink, tables,  hard_wrap, with_toc_data, strikethrough, lax_spacing, superscript]
+
 
 permalink: /post/:year:month:day/
 exclude: ["README.md", "Rakefile"]
@@ -72,6 +71,11 @@ author :
   email : "zaimu AT tingdao.org"
 
 url: http://zaimu.tingdao.org
+
+plugins_dir:  ./assets/_plugins
+layouts_dir:  ./assets/_layouts
+data_dir:     ./assets/_data
+includes_dir: ./assets/_includes
 
 path :
   assets : /assets
