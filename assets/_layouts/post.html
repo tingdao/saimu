@@ -5,9 +5,9 @@ layout: default
   <header>
     <h1 class="article">{{ page.title }}</h1>
   </header>
-  <div class="meta nav">
+  <div class="bd text">
     <p>{{ site.author.name }}</p>
-    <p>url: {{ site.url }}{{ page.url }}</p>
+    <p>{{ site.url }}{{ page.url }}</p>
     <p class="date-publish">
       Published:
       <date class="date" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
@@ -15,17 +15,14 @@ layout: default
       <span class="day">{{ page.date | date: '%d' }}</span>
       <span class="year">{{ page.date | date: '%Y' }}</span>
       </date>
-    </p><p></p>
-  </div><!-- meta -->
-
-  <div class="bd text">
+    </p>
     {{ content }}
   </div>
 
   <footer>
     <div class="meta nav">
       <p>{{ site.author.name }}</p>
-      <p>url: {{ site.url }}{{ page.url }}</p>
+      <p>{{ site.url }}{{ page.url }}</p>
       <p class="date-publish">
         Published:
         <date class="date" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
