@@ -1,4 +1,4 @@
-<!-- ---
+---
 layout: page
 title: 其它
 permalink: /cat/bible/
@@ -17,7 +17,7 @@ permalink: /cat/bible/
 
 <div class="page list">
   {% assign cat = site.categories['其它'] %}
-  <h2>{{cat[0]}}</h2>
+  <h2>{{cat | first}}</h2>
   <ul>
-  {% assign page-list = cat[1] %}{% include page-list %}  </ul>
-</div> -->
+  {% assign page-list = cat | last %}{% include page-list %}  </ul>
+</div>
