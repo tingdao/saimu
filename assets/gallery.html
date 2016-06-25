@@ -4,10 +4,7 @@ tagline: ""
 permalink: /gallery/
 ---
 <ul class="posts home">
-  <li>
-{% for image in site.static_files %}
-    {% if image.path contains 'img/' %}
-        <a href="{{image.path}}">{{image.path}}</a>
-    {% endif %}
-{% endfor %}</li>
+{% for image in site.static_files %}{% if image.path contains 'img/' %}
+    <li><a href="{{image.path}}">{{image.path}}</a></li>
+{% endif %}{% endfor %}
 </ul>
