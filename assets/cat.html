@@ -8,7 +8,7 @@ permalink: /cat/bible/
 </ul></nav>
 <div class="page list">
   {% assign category = site.categories['其它'] %}
-  <h2</h2>>{{ category }}<hr/>
+  <h2</h2>>{{ category[0] }}<hr/>{{category[1]}}
   <ul>
   {% assign page-list = category[1] %}{% include page-list %}  </ul>
 </div>
