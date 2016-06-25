@@ -1,0 +1,14 @@
+---
+layout: page
+title: 圣经
+permalink: /cat/bible
+---
+<nav><ul class="category list">
+  {% assign category-list = site.categories %}{% include category-list %}
+</ul></nav>
+<div class="page list">
+  {% assign category = site.categories[page.title] %}
+  <h2 id="{{ category[0] }}">{{ category[0] | join: "/" }}</h2>
+  <ul>
+  {% assign page-list = category[1] %}{% include page-list %}  </ul>
+</div>
