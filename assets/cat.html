@@ -1,14 +1,14 @@
 ---
 layout: page
 title: 其它
-permalink: /cat/bible
+permalink: /cat/bible/
 ---
 <nav><ul class="category list">
   {% assign category-list = site.categories %}{% include category-list %}
 </ul></nav>
 <div class="page list">
-  {% assign category = site.categories[page.title] %}
-  <h2>{{ category }}</h2>
+  {% assign category = site.categories['其它'] %}
+  <h2</h2>>{{ category }}<hr/>
   <ul>
   {% assign page-list = category[1] %}{% include page-list %}  </ul>
 </div>
