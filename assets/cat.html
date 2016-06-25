@@ -17,7 +17,8 @@ permalink: /cat/bible/
 
 <div class="page list">
   {% assign cat = site.categories['c'] %}
-  <h2>{{cat | first}}</h2>
+
+  <h2>{{site.categories['c'] | first}}</h2>{{cat | first}}
   <ul>
   {% assign page-list = cat | last %}{% include page-list %}  </ul>
 </div>
