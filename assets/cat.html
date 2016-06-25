@@ -6,9 +6,18 @@ permalink: /cat/bible/
 <nav><ul class="category list">
   {% assign category-list = site.categories %}{% include category-list %}
 </ul></nav>
+
 <div class="page list">
-  {% assign category = site.categories['其它'] %}
-  <h2</h2>>{{ category[0] }}<hr/>{{category[1]}}
+{% for category in site.categories %}
+  <h2 id="{{ category[0] }}">{{ category[0] | join: "/" }}</h2>
   <ul>
   {% assign page-list = category[1] %}{% include page-list %}  </ul>
+{% endfor %}
+</div>
+
+<div class="page list">
+  {% assign cat = site.categories['其它'] %}
+  <h2>cat[0]</h2>
+  <ul>
+  {% assign page-list = cat[1] %}{% include page-list %}  </ul>
 </div>
