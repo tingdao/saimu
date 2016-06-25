@@ -3,12 +3,10 @@ layout: page
 tagline: ""
 permalink: /gallery/
 ---
-
 <ul class="posts home">
 {% for image in site.static_files %}
     {% if image.path contains 'img/' %}
-        <p>[image.path]({{image.path}})</p>
-        <img data-src="{{ site.baseurl }}{{ image.path }}" />
+        <p><a src="{{image.path}}">{{image.path}}</a></p>
     {% endif %}
 {% endfor %}
 </ul>
