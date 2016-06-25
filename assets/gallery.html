@@ -1,0 +1,14 @@
+---
+layout: page
+tagline: ""
+permalink: /gallery/
+---
+
+<ul class="posts home">
+{% for image in site.static_files %}
+    {% if image.path contains 'img/' %}
+        <p>[image.path]({{image.path}})</p>
+        <img data-src="{{ site.baseurl }}{{ image.path }}" />
+    {% endif %}
+{% endfor %}
+</ul>
