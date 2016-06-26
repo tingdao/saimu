@@ -14,23 +14,14 @@ var TABREG = new RegExp('^('+ String.fromCharCode(32) +'|'+ String.fromCharCode(
         return level;
     }
 
-
 $("pre > code").each(
 	function(index){
 		var e = $(this)
 		var p = e.parent()
 		u = e.text()
 		var text = e.text()
+    text = (text|| '').replace(/\{/g, '<b class="x-p">{</b>').replace(/\}/g, '<b class="x-p">}</b>')
 
-
-		// .replace(/\s{2}/g, "+")
-
-		// console.log(text)
-
-		// var tn = (text.match(/p/g) || []).length
-		// var tn2 = (text.match(/pp/g) || []).length
-		// tn && (tn == tn2 * 2) && (text = text.replace(/pp/g, "+") )
-		// console.log( text)
 		var t = text.split(LINE_ENDING_SPLITER)
 		t[0] || t.shift()
 		t.pop()

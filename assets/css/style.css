@@ -11,6 +11,14 @@
 
 .x{display: table-cell;}
 
+.x-p{
+color: #678CB1;
+}
+
+.x2 .x-p{
+  color: orange
+}
+
 blockquote p{
   /*white-space: pre-line;*/
 }
@@ -140,8 +148,8 @@ margin-bottom: 1.6em;
 .text a:hover{
 text-decoration: underline;
 }
-
-q,code,em, strong {
+/*em, strong*/
+q,code{
 color: #678CB1;
 }
 
