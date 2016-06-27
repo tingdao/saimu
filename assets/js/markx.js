@@ -20,7 +20,14 @@ $("pre > code").each(
 		var p = e.parent()
 		u = e.text()
 		var text = e.text()
-    text = (text|| '').replace(/\{/g, '<b class="x-p">{</b>').replace(/\}/g, '<b class="x-p">}</b>')
+    text = (text|| '')
+    .replace(/\{/g, '<b class="x-p x-p-l">｛ </b>')
+    .replace(/\}/g, '<b class="x-p x-p-r">｝</b>')
+    .replace(/([\|\[\]\(\)])/g,
+        function(x){
+          x=String.fromCharCode(x.charCodeAt(0)+65248);
+          return '<a class="x-ps">'+x+'</a>'}
+      )
 
 		var t = text.split(LINE_ENDING_SPLITER)
 		t[0] || t.shift()
