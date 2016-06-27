@@ -9,7 +9,7 @@
 .x6{color: #93C763}
 .x7{color: black}
 
-.x{display: table-cell;}
+.x{display: block} /*table-cell*/
 .x:first-letter{
 }
 .x-p, .x-ps{
