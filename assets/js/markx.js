@@ -44,10 +44,10 @@
                 var ti = (t[i]||'').replace(/(\s*$)/g, ''),
                     si = ti.trim(),
                     left_length = (ti || '').length - (si || '').length
-                if (si.indexOf('`') != 0) {
-                    level = getLevel(ti)
+                if (si.match(/^[\`\,]/)) {
+                  si = si.replace(/^[\`\,]+/, '')
                 } else {
-                    si = si.replace(/\`+/, '')
+                  level = getLevel(ti)
                 }
                 r += '<span class="x x' + level % 5 + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
 
