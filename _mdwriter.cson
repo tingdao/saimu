@@ -84,7 +84,7 @@ textStyles:
   italic:
     before: "_", after: "_"
   keystroke:
-    before: "<kbd>", after: "</kbd>"
+    before: "<kbd>"
   strikethrough:
     before: "~~", after: "~~"
   codeblock:
@@ -97,7 +97,7 @@ lineStyles:
   h1: before: "# "
   h2: before: "## "
   h3: before: "### "
-  h4: before: "#### "
+  h4: before: "~~~~"
   h5: before: "##### "
   ul:
     before: "- ",
@@ -107,15 +107,28 @@ lineStyles:
     before: "1. ",
     regexMatchBefore: "(?:\\d+\\.)\\s"
     regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s"
-  task:
-    before: "- [ ] ",
-    regexMatchBefore: "(?:-|\\*|\\+|\\d+\\.)\\s+\\[ ]\\s"
-    regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s*(?:\\[[xX ]])?\\s"
-  taskdone:
-    before: "- [X] ",
-    regexMatchBefore: "(?:-|\\*|\\+|\\d+\\.)\\s+\\[[xX]]\\s"
-    regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s*(?:\\[[xX ]])?\\s"
+  # task:
+  #   before: "- [ ] ",
+  #   regexMatchBefore: "(?:-|\\*|\\+|\\d+\\.)\\s+\\[ ]\\s"
+  #   regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s*(?:\\[[xX ]])?\\s"
+  # taskdone:
+  #   before: "- [X] ",
+  #   regexMatchBefore: "(?:-|\\*|\\+|\\d+\\.)\\s+\\[[xX]]\\s"
+  #   regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s*(?:\\[[xX ]])?\\s"
   blockquote: before: "> "
+  task:
+    before: "`",
+    regexMatchBefore: "(?:\\`+|\\,+)"
+    regexBefore: "(?:\\`+|\\,+)"
+  taskdone:
+    before: "[]",
+    regexMatchBefore: "\\[]"
+    regexBefore: "\\[]"
+
+
+
+
+
 
 # image tag template
 imageTag: "![{alt}]({src})"
