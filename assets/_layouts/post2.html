@@ -15,7 +15,12 @@ layout: default
   {% for tag in page.tags %}
   =={{tag}}--{{site.tags[tag]}}
     <ul>
-    {% assign page-list = site.tags[tag][1] %}{% include page-list %}  </ul>
+      {% for tg in site.tags %}
+      {% if tg[0] == tag %}
+    {% assign page-list = tg[1] %}{% include page-list %}
+    {% endif %}
+    {% endfor %}
+  </ul>
   {% endfor %}
 
 
