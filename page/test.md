@@ -1,6 +1,6 @@
 ---
 layout: post
-tags: 使徒行传
+group: 使徒行传
 ---
 
 
