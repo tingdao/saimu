@@ -13,7 +13,7 @@ layout: default
     <hr/>
   </div>
   {% for tag in page.tags %}
-  =={{tag}}--{{site.tags[tag]}}
+  =={{tag}}--
     <ul>
       {% for tg in site.tags %}
       {% if tg[0] == tag %}
@@ -22,7 +22,7 @@ layout: default
 
     {% for node in page-list %}{% if node.title != null %}
 
-<li> <a href="{{ node.url }}">{{ node.title }}</a></li>
+<li> ggg <a href="{{ node.url }}">{{ node.title }}</a></li>
 
     {% endif %}
     {% endfor %}
