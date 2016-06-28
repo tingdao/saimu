@@ -9,20 +9,7 @@
             <a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
         </p>
         {{ content }}
-        <div class = "series">
-            {% for tag in page.tags %}
-                {% if tag contains ':' %}
-                    <ul>
-                        {% for tg in site.tags %}
-                            {% if tg[0] == tag %}
-                                {% assign page - list = tg[1] %}{% include page - list %}
-                            {% endif %}
-                        {% endfor %}
-                    </ul>
-                {% endif %}
-                -----
-            {% endfor %}
-        </div>
+
     </div>
     <footer>
         <div class="meta nav">
