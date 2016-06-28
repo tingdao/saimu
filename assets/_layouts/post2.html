@@ -10,10 +10,12 @@ layout: default
       <a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
   </p>
     {{ content }}
+    <hr/>
   </div>
   {% for tag in page.tags %}
-  =={{tag}}--<br/>
-
+  =={{tag}}--
+    <ul>
+    {% assign page-list = site.tags[tag][1] %}{% include page-list %}  </ul>
   {% endfor %}
 
 
