@@ -1,5 +1,5 @@
 ---
-layout: post2
+layout: post
 tags: 使徒行传
 ---
 
