@@ -10,7 +10,9 @@ permalink: /tags/
 </ul></nav>
 <div class="page list">
 {% for tag in site.tags %}
-  <h2 id="{{ tag[0] }}">{{ tag[0] }}</h2>
+{% assign tg0 = tag[0] %}
+{% if tg0 contains ':' or tg0 contains '☆' %} continue {% endif %}
+  <h2 id="{{ tg0 }}">{{ tg0 }}</h2>
   <ul>
   {% assign page-list = tag[1] %}{% include page-list %}  </ul>
 {% endfor %}
