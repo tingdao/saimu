@@ -12,9 +12,8 @@ layout: default
     {{ content }}
   </div>
   {% for tag in page.tags %}
-  =={{tag}}--
-    <ul>
-    {% assign page-list = site.tags[tag][1] %}{% include page-list %}  </ul>
+  =={{tag}}--<br/>
+
   {% endfor %}
 
 
