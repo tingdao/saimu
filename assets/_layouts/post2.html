@@ -12,19 +12,22 @@ layout: default
     {{ content }}
     <hr/>
   </div>
+
+<div class = series>
+
   {% for tag in page.tags %}
-  =={{tag}}-- uuu 
+  {% if tag contains ':' %}
+  =={{tag}}-- uuu:
     <ul>
-      {% for tg in site.tags %}
+    {% for tg in site.tags %}
       {% if tg[0] == tag %}
-    {% assign page-list = tg[1] %}{% include page-list %}
-
-
-    {% endif %}
+      {% assign page-list = tg[1] %}{% include page-list %}
+      {% endif %}
     {% endfor %}
-  </ul>
-  {% endfor %}
-
+    </ul>
+    {% endfor %}
+  {% endif %}
+</div>
 
   <footer>
     <div class="meta nav">
