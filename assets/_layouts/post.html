@@ -8,20 +8,13 @@ layout: default
   <div class="bd text">
     <p><a href="{{site.url}}">{{ site.author.name }}</a>
       <a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
-    <!-- <span class="date-publish">
-      <date class="date" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
-      <span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
-      <span class="day">{{ page.date | date: '%d' }}</span>
-      <span class="year">{{ page.date | date: '%Y' }}</span>
-      </date>
-    </span><br/> -->
   </p>
     {{ content }}
 
     <div class = series>
       {% for tag in page.tags %}
       {% if tag contains ':' %}
-      -------
+      ---
         <ul>
         {% for tg in site.tags %}
           {% if tg[0] == tag %}
