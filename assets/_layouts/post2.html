@@ -13,20 +13,11 @@ layout: default
     <hr/>
   </div>
   {% for tag in page.tags %}
-  =={{tag}}--
+  =={{tag}}-- uuu 
     <ul>
       {% for tg in site.tags %}
       {% if tg[0] == tag %}
-    {% assign page-list = tg[1] %}
-
-
-    {% for node in page-list %}{% if node.title != null %}
-
-<li> ggg <a href="{{ node.url }}">{{ node.title }}</a></li>
-
-    {% endif %}
-    {% endfor %}
-
+    {% assign page-list = tg[1] %}{% include page-list %}
 
 
     {% endif %}
