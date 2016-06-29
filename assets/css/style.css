@@ -20,6 +20,8 @@ color: orange;
   color: #fa8072
 }
 
+
+
 /*.x-p-l:before{
   content: "{";
 	position: absolute;
@@ -28,6 +30,15 @@ color: orange;
 	font-family: serif;
 	font-weight: bolder;
 }*/
+
+.series a, .series .active a {
+  font-size: 1em;
+}
+
+.series .active a{
+  color: grey;
+  text-decoration: unerline;
+}
 
 blockquote p{
   /*white-space: pre-line;*/
