@@ -35,11 +35,14 @@ color: orange;
   font-size: 1em;
 }
 .series .active a{
-  /*color: grey;*/
-  text-decoration: underline;
+  color: orange;
+  /*text-decoration: underline;*/
 }
-.series a:visited{
+/*.series a:visited{
 color: grey
+}*/
+.series li{
+  padding-right : .6em;
 }
 
 blockquote p{
@@ -74,9 +77,13 @@ small, .small{
   font-size: 0.75em;
 }
 
-a, a:hover, a:visited {
+a, a:hover{
   color: #93C763; /*#A082BD; /*#CAE682;*/
   text-decoration: none;
+}
+
+a:visited {
+  color: green;
 }
 
 a:hover {
