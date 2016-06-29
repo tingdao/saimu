@@ -52,10 +52,11 @@ $('.tag-nav').each(cats_menu('tags'))
 function cats_menu(cat_type){
   return function(index){
   var _this = $(this).empty()
-  var post_list = arch[cat_type]
-    for(var ct in post_list){
-      // var cat_i = post_list[ct]
-      var li = $('<li><a href="#'+ct+'">'+ct+' <span>'+post_list[ct].length+'</span></a></li>').click(fresh_list(post_list[ct], ct))
+  var _cats = arch[cat_type]
+    for(var ct in _cats){
+      if(ct.match(/[\:\,]/g)){continue}
+      // var cat_i = _cats[ct]
+      var li = $('<li><a href="#">'+ct+' <span>'+_cats[ct].length+'</span></a></li>').click(fresh_list(_cats[ct], ct))
       _this.append(li)
     }
   }
