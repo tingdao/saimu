@@ -20,6 +20,14 @@ color: orange;
   color: #fa8072
 }
 
+.category.list{
+  font-size: 1.2em;
+  font-weight:bolder
+}
+
+.list li{
+  margin-right: 1em;
+}
 
 
 /*.x-p-l:before{
