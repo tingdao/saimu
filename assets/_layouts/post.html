@@ -5,14 +5,13 @@ layout: default
   <header>
     <h1 class="article">{{ page.title }}</h1>
   </header>
+  <div class = "meta nav">{% include series %}</div>
   <div class="bd text">
     <p><a href="{{site.url}}">{{ site.author.name }}</a>
       <a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
   </p>
     {{ content }}
-
     {% include series %}
-
   </div>
 
   <footer>

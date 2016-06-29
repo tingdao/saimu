@@ -1,7 +1,7 @@
 <div class = series>
-  {% for tag in page.tags %}
+  {% for tag in page.tags reversed %}
   {% if tag contains ':' %}
-  ---2
+  ---
     <ul>
     {% for tg in site.tags %}
       {% if tg[0] == tag %}
