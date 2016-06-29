@@ -22,10 +22,12 @@ for(i in posts){
 
 }
 
-var hash = window.location.hash.replace(/#/g,'') || '圣经'
+var hash = window.location.hash.replace(/#/g,'')
 // for(var i in arch.cats){
-var cat = arch.cats[hash] || arch.tags[hash]
+if(hash){
+var cat = arch.cats[hash] || arch.tags[hash] || arch.cats['圣经']
 fresh_list(cat, hash)()
+}
 
 $('.category.list').each(cats_menu('cats'))
 $('.tag.list').each(cats_menu('tags'))
