@@ -43,7 +43,7 @@ color: orange;
   font-size: 1em;
 }
 .series .active a{
-  color: orange;
+  color: grey;
   /*text-decoration: underline;*/
 }
 /*.series a:visited{
@@ -85,12 +85,12 @@ small, .small{
   font-size: 0.75em;
 }
 
-a, a:hover{
+a, a:hover, a:visited{
   color: #93C763; /*#A082BD; /*#CAE682;*/
   text-decoration: none;
 }
 
-a:visited {
+.bd a:visited {
   color: #B3B784;
 }
 
