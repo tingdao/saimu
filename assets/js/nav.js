@@ -5,7 +5,7 @@
 // TITLE =0, URL =1, TAGS=2, CATS=3;
 var cats = {}, tags = {}, posts = _posts;
 window.arch={cats:cats,tags:tags,posts:posts}
-console.log(arch)
+// console.log(arch)
 for(i in posts){
   var post = arch.posts[i]
   var tg = post[TAGS] = post[TAGS].split(',')
@@ -23,6 +23,7 @@ for(i in posts){
 }
 
 var hash = window.location.hash.replace(/#/g,'')
+hash = decodeURI(hash)
 // for(var i in arch.cats){
 if(hash){
 var cat = arch.cats[hash] || arch.tags[hash] || arch.cats['圣经']
