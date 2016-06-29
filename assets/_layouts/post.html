@@ -11,7 +11,6 @@ layout: default
       <a href="{{ site.url }}{{ page.url }}">{{ site.url }}{{ page.url }}</a>
   </p>
     {{ content }}
-    {% include series %}
   </div>
 
   <footer>
@@ -19,19 +18,19 @@ layout: default
       <p>{{ site.author.name }}</p>
       <p>{{ site.url }}{{ page.url }}</p>
       <p class="date-publish">
-        Published:
         <date class="date" title="{{ page.date | date_to_xmlschema }}" datetime="{{ page.date | date_to_xmlschema }}" pubdate>
         <span class="month"><abbr>{{ page.date | date: '%B' }}</abbr></span>
         <span class="day">{{ page.date | date: '%d' }}</span>
         <span class="year">{{ page.date | date: '%Y' }}</span>
         </date>
       </p>
+      {% include series %}
       <ul class="list category">
-        <li class="list-head">category: </li>
+        <!-- <li class="list-head">category: </li> -->
         {% assign category-list = page.categories %}{% include category-list %}
       </ul>
       <ul class="list tag">
-        <li class="list-head">tags: </li>
+        <!-- <li class="list-head">tags: </li> -->
         {% assign tag-list = page.tags %}{% include tag-list %}
       </ul>
     </div><!-- meta -->

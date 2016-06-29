@@ -1,7 +1,6 @@
 <div class = series>
   {% for tag in page.tags %}
   {% if tag contains ':' %}
-  ---
     <ul>
     {% for tg in site.tags %}
       {% if tg[0] == tag %}
