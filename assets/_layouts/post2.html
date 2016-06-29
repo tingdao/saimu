@@ -13,6 +13,12 @@ layout: default
     <hr/>
   </div>
 
+  {% assign t = (site.pages | where: "rel" , "ttt") %}
+  {% for page in t %}
+    ===   {{ t.title }}
+  {% endfor %}
+
+
 <div class = series>
   {% for tag in page.tags %}
   {% if tag contains ':' %}
