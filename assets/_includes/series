@@ -1,0 +1,14 @@
+<div class = series>
+  {% for tag in page.tags %}
+  {% if tag contains ':' %}
+  ---2
+    <ul>
+    {% for tg in site.tags %}
+      {% if tg[0] == tag %}
+      {% assign page-list = tg[1] %}{% include page-list %}
+      {% endif %}
+    {% endfor %}
+    </ul>
+  {% endif %}
+  {% endfor %}
+</div>
