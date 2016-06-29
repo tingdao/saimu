@@ -1,8 +1,9 @@
 <div class = series>
   {% for tag in page.tags %}
   {% if tag contains ':' %}
-    <ul>:
-    {% assign page-list = (site.tags[tag][1] | reverse) %}{% include page-list %}
+    ++ <ul>
+    {%  assign tg = site.tags[tag] %}<li>tg:{{tg}}</li>
+    {% assign page-list = (tg[1] | reverse) %}{% include page-list %}
     </ul>
   {% endif %}
   {% endfor %}
