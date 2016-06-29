@@ -2,8 +2,7 @@
   {% for tag in page.tags %}
   {% if tag contains ':' %}
     <ul>
-    {%  assign tg = site.tags[tag] %}<li>tg</li>
-    {% assign page-list = (tg[1] | reverse) %}{% include page-list %}
+    {% assign page-list = (site.tags[tag] | reverse) %}{% include page-list %}
     </ul>
   {% endif %}
   {% endfor %}
