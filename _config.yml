@@ -85,5 +85,5 @@ path :
   feed : http://feeds.tingdao.org/pftsao
   js : /assets/js
   css: /assets/css
-
+timezone: Asia/Hong_Kong
 copyright: "©塞牧.在木.听稻. 2006-2016. All rights reserved."

@@ -13,7 +13,7 @@ layout: default
     <hr/>
   </div>
 
-  {% assign t = (site.pages | where: "rel" , "ttt") %}
+  {% assign t = (site.stack | where: "rel" , "ttt") %}
   {% for page in t %}
     ===   {{ t.title }}
   {% endfor %}
