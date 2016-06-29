@@ -10,7 +10,8 @@ window._posts = [
 TITLE =0, URL =1, TAGS=2, CATS=3;
 
 window._sitemap0 ={}
-for (post in _posts){
+for (pi in _posts){
+  var post = _posts[pi]
   _sitemap0[post[TITLE]]=post[URL]
 }
 
