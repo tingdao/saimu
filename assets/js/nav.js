@@ -22,13 +22,29 @@ for(i in posts){
 
 }
 
-var hash = window.location.hash.replace(/#/g,'')
-hash = decodeURI(hash)
-// for(var i in arch.cats){
+hash_fresh(window.location.hash)
+
+function hash_fresh(hash){
+  hash = decodeURI((hash||'').replace(/#/g,''))
+console.log(hash)
 if(hash){
-var cat = arch.cats[hash] || arch.tags[hash] || arch.cats['圣经']
-fresh_list(cat, hash)()
+    var cat = arch.cats[hash] || arch.tags[hash] || arch.cats['圣经']
+    fresh_list(cat, hash)()
+  }
 }
+
+$('.meta .list a').click(function(){
+  console.log('111')
+hash_fresh( $(this)[0].hash )
+})
+
+
+// .each(function(){
+//   var _this = $(this)
+//   _this.click(function(){}
+//
+//   })
+// })
 
 $('.category-nav').each(cats_menu('cats'))
 $('.tag-nav').each(cats_menu('tags'))
@@ -50,7 +66,10 @@ function fresh_list(cat, title){
   return function(){
   // console.log(cat[0][0])
 
-  title && $('.nav-cat-title').text(title)
+  if(title){
+    $('.nav-cat-title').text(title).attr('id', title)
+  }
+
 
   $('.nav-post-list').each(function(index){
     // console.log(index)
