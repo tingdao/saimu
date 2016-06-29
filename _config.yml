@@ -80,8 +80,8 @@ includes_dir: ./assets/_includes
 path :
   assets : /assets
   archive: /archive
-  cats : ''
-  tags: ''
+  cats : /cat
+  tags: /cat
   feed : http://feeds.tingdao.org/pftsao
   js : /assets/js
   css: /assets/css
