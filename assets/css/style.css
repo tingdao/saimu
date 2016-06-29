@@ -31,13 +31,15 @@ color: orange;
 	font-weight: bolder;
 }*/
 
-.series a, .series .active a {
+.series a, .series .active a{
   font-size: 1em;
 }
-
 .series .active a{
-  color: grey;
-  text-decoration: unerline;
+  /*color: grey;*/
+  text-decoration: underline;
+}
+.series a:visited{
+color: grey
 }
 
 blockquote p{
