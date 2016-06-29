@@ -4,7 +4,7 @@ permalink:
 ---
 
 window._posts = [
-{% for post in site.posts %}['{{ post.title }}','{{ post.url }}','{{post.tags|join ","}}','{{post.categories|join ","}}'],{% endfor %}
+{% for post in site.posts %}[{{ post.title }},{{ post.url }},{{post.tags}},{{post.categories}}],{% endfor %}
 ]
 
 TITLE =0, URL =1, TAGS=2, CATS=3;
