@@ -2,11 +2,9 @@
   {% for tag in page.tags %}
   {% if tag contains ':' %}
     <ul>
-    {% for tg in site.tags %}
-      {% if tg[0] == tag %}
+    {% assign tgs = (site.tags | where_exp:'it', 'it[0] == tag') %}
+    {% for tg in tgs %}
       {% assign page-list = (tg[1] | reverse) %}{% include page-list %}
-      {% break %}
-      {% endif %}
     {% endfor %}
     </ul>
   {% endif %}

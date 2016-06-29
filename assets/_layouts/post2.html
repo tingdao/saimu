@@ -15,7 +15,7 @@ layout: default
 
   {% assign t = (site.stack | where: "rel" , "ttt") %}
   {% for page in t %}
-    ===   {{ t.title }}
+    ===   {{ page.title }}
   {% endfor %}
 
 
