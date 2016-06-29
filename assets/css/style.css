@@ -21,7 +21,7 @@ color: orange;
 }
 
 .category.list{
-  font-size: 1.15em;
+  font-size: 1.2em;
   font-weight:bolder
 }
 
@@ -152,6 +152,9 @@ nav ul, .nav ul, {
 }
 nav ul li, .nav ul li{
   display :inline;
+}
+nav{
+  max-width: 35em;
 }
 
 article{
