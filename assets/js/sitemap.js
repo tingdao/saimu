@@ -3,8 +3,15 @@ layout: nil
 permalink:
 ---
 
-window._sitemap0 = {
-{% for post in site.posts %}'{{ post.title }}':'{{ post.url }}',{% endfor %}
+window._posts = [
+{% for post in site.posts %}[{{ post.title }},{{ post.url }},{{post.tags}},{{post.categories}}],{% endfor %}
+]
+
+TITLE =0, URL =1, TAGS=2, CATS=3;
+
+window._sitemap0 ={}
+for (post in _posts){
+  _sitemap0[post[TITLE]]=post[URL]
 }
 
 function text_clear(text){
