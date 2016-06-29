@@ -30,8 +30,8 @@ var cat = arch.cats[hash] || arch.tags[hash] || arch.cats['圣经']
 fresh_list(cat, hash)()
 }
 
-$('.category.list').each(cats_menu('cats'))
-$('.tag.list').each(cats_menu('tags'))
+$('.category-nav').each(cats_menu('cats'))
+$('.tag-nav').each(cats_menu('tags'))
 
 function cats_menu(cat_type){
   return function(index){
@@ -50,9 +50,9 @@ function fresh_list(cat, title){
   return function(){
   // console.log(cat[0][0])
 
-  title && $('.cat-title').text(title)
+  title && $('.nav-cat-title').text(title)
 
-  $('.post-list').each(function(index){
+  $('.nav-post-list').each(function(index){
     // console.log(index)
     var ul = $('<ul></ul>')
     for(var j in cat){
