@@ -63,12 +63,6 @@ defaults:
     values:
       category: 其它
 
-  -
-    scope:
-      path: "T"
-    values:
-      layout: post
-
 title : "[在木]"
 tagline: "@听稻"
 author :
