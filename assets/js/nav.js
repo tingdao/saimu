@@ -54,7 +54,7 @@ function cats_menu(cat_type){
   var _this = $(this).empty()
   var _cats = arch[cat_type]
     for(var ct in _cats){
-      if(ct.match(/[\:\,]/g)){continue}
+      if(!ct || ct.match(/[\:\,]/g)){continue}
       // var cat_i = _cats[ct]
       var li = $('<li><a href="#">'+ct+' <span>'+_cats[ct].length+'</span></a></li>').click(fresh_list(_cats[ct], ct))
       _this.append(li)
