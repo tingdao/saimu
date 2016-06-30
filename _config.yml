@@ -69,12 +69,6 @@ defaults:
     values:
       layout: post
 
-  -
-    scope:
-      path: "ttts"
-    values:
-      category: ttt
-
 title : "[在木]"
 tagline: "@听稻"
 author :
