@@ -25,7 +25,6 @@ defaults:
   -
     scope:
       path: "_posts"
-      type: "posts"
     values:
       layout: "post"
   -
@@ -63,6 +62,18 @@ defaults:
       path: "_posts/其它"
     values:
       category: 其它
+
+  -
+    scope:
+      path: "T"
+    values:
+      layout: post
+
+  -
+    scope:
+      path: "ttts"
+    values:
+      category: ttt
 
 title : "[在木]"
 tagline: "@听稻"
