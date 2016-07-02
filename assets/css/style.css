@@ -1,12 +1,13 @@
 @import 'base.css';
 
 .x0{color: #fa8072}
-.x3{color: #93C763}
+.x1{color: MediumSeaGreen}
 .x2{color: #678CB1}
-.x1{color: #EC7600}
+.x3{color: #EC7600}
 .x4{color: orange}
 .x5{color: blue}
-
+.x6{color: #93C763}
+.x7{color: black}
 
 .x{display: block} /*table-cell*/
 .x:first-letter{
