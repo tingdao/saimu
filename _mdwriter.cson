@@ -98,7 +98,7 @@ lineStyles:
   h2: before: "## "
   h3: before: "### "
   h4: before: "~~~~"
-  h5: before: "##### "
+
   ul:
     before: "- ",
     regexMatchBefore: "(?:-|\\*|\\+)\\s"
@@ -107,6 +107,7 @@ lineStyles:
     before: "1. ",
     regexMatchBefore: "(?:\\d+\\.)\\s"
     regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s"
+
   # task:
   #   before: "- [ ] ",
   #   regexMatchBefore: "(?:-|\\*|\\+|\\d+\\.)\\s+\\[ ]\\s"

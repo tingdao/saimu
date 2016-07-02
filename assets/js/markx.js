@@ -44,7 +44,7 @@
                 var ti = (t[i]||'').replace(/(\s*$)/g, ''),
                     si = ti.trim(),
                     left_length = (ti || '').length - (si || '').length
-                if (si.match(/^[\`\,]/)) {
+                if (si.match(/^[\`\,\-]/)) {
                   si = si.replace(/^[\`\,]+/, '')
                 } else {
                   level = getLevel(ti)
