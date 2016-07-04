@@ -1,0 +1,80 @@
+---
+title: stdd
+tags: ☆
+
+---
+
+{% raw %}
+#你好
+
+aaaaaaaaaaa
+bbbbbbbbbbbbbb
+
+##测试
+
+    aad大
+        发鞥
+            feef
+                fefeeee
+
+---
+name: default
+layout: true
+task: &nbsp;
+
+.task[{{task}}]
+
+---
+class: center, middle, inverse
+
+# Object Literals
+
+???
+
+Objekter, arrays og typer
+---
+template: default
+layout: true
+
+### Object Literals
+
+---
+task: [#01 Object properties](http://js-workshop.herokuapp.com/#1/1)
+
+# Objects
+
+A collection of key-value properties.
+
+    var obj = {
+      key1: 'value1',
+      key2: 13
+    };
+
+    obj.key1;         // 'value1'
+    obj['key2'];      // 13
+    obj.key3;         // undefined
+
+    delete obj.key1;
+    obj.key1;         // undefined
+
+???
+
+- Aksess av felter både ved . og []
+- Manglende felt gir undefined, ikke feil
+
+---
+task: [#02 Populating arrays](http://js-workshop.herokuapp.com/#1/2)
+
+# Arrays
+
+A collection of indexed properties.
+
+    var arr = [1, "two", 3];
+
+    arr.push(4);
+
+    arr[1];         // "two"
+    arr[3] = 4;
+    arr.length;     // 4
+
+{% endraw %}

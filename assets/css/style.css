@@ -3,22 +3,20 @@
 .x0{color: #fa8072}
 .x1{color: MediumSeaGreen}
 .x2{color: #678CB1}
-.x3{color: #EC7600}
-.x4{color: orange}
-.x5{color: blue}
-.x6{color: #93C763}
-.x7{color: black}
+.x4{color: DarkGray} /*#EC7600*/
+.x3{color: orange}
+
 
 .x{display: block} /*table-cell*/
 .x:first-letter{
 }
 .x-p, .x-ps{
-color: orange;
+color: gold;
 /*padding-right: 1em;*/
 }
-.x4 .x-p, .x4 .x-ps{
+/* .x3 .x-p, .x3 .x-ps{
   color: #fa8072
-}
+} */
 
 .category-nav{
   font-size: 1.2em;

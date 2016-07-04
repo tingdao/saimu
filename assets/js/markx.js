@@ -15,6 +15,10 @@
         return level;
     }
 
+    $('.remark-code-line').replaceWith(function(){
+      return $(this).text+'/n'
+    })
+
     $("pre > code").each(
         function(index) {
             var e = $(this)

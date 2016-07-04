@@ -12,14 +12,18 @@ kramdown:
 
 permalink: /post/:year:month:day/
 exclude: ["README.md", "Rakefile"]
-auto: true
+# auto: true
 highlighter: null
 future: false
+# incremental: true
 
 collections:
-  stack:
+  beta:
     output: true
-    permalink: /stack/:year:month:day/
+    permalink: /beta/:year:month:day/
+  slide:
+    output: true
+    permalink: /slide/:year:month:day/
 
 defaults:
   -
@@ -34,9 +38,14 @@ defaults:
       layout: "page"
   -
     scope:
-      path: _stack
+      path: _beta
     values:
       layout: page
+  -
+    scope:
+      path: _slide
+    values:
+      layout: slide
   -
     scope:
       path: "_posts/圣经"
