@@ -7,8 +7,7 @@ permalink: /about/
 
 **zaimu**<span><strong>@</strong><span>**tingdao.org**
 
-
-
+rss: feeds.tingdao.org/pftsao
 
 ---------------
 

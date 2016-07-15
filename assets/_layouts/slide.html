@@ -5,16 +5,25 @@
     <title>{{ page.title | strip_html }}</title>
     <link rel="stylesheet" href="/assets/css/style.css"/>
     <style>
+    #source{display:none}
       .remark-code, .remark-inline-code { font-family: 'Ubuntu Mono'; }
       .remark-container{
         background: black !important;
       }
       .remark-slide-content{
-        font-size: 24px !important;
+        font-size: 32px !important;
         /*color: black;*/
 
-        background-color: #293134
+        background-color: #293134;
+        padding-left: 2em !important;
       }
+
+      img{
+        margin-left: 0;
+        margin-right: 0;
+      }
+
+
       .remark-slide{
 
       }
@@ -87,11 +96,7 @@ class:
 layout: true
 name: logo
 
-
-
 ---
-###zaimu.tingdao.org
-
 
 {{ content }}
 

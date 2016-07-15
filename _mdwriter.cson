@@ -39,7 +39,7 @@ frontMatterDate: "{year}-{month}-{day}"
 frontMatter: """
 ---
 title: {title}
-date: {year}/{month}/{day}
+date0: {year}/{month}/{day}
 tags: ☆
 ---
 """
