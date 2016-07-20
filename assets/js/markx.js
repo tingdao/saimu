@@ -5,6 +5,10 @@
     var V = "\t";
     var TABREG = new RegExp('^(' + String.fromCharCode(32) + '|' + String.fromCharCode(160) + '){4}')
 
+    $.ajaxSetup({
+        cache: true
+    })
+
     function getLevel(line) {
         var level = 0;
         while (TABREG.test(line)) {
@@ -16,43 +20,10 @@
     }
 
     $('.remark-code-line').replaceWith(function() {
-        return $(this).text + '/n'
+      // console.log($(this).text())
+        return $(this).text() + '\r'
     })
 
-    $.ajaxSetup({
-        cache: true
-    });
-
-    function initKm(p) {
-        var target = p
-        var minder = new kityminder.Minder();
-        var protocol = 'text';
-        var data = target.textContent;
-        target.textContent = null;
-        minder.renderTo(target);
-        minder.importData(protocol, data);
-        minder.disable();
-        setTimeout(
-                function() {
-                    minder.useTemplate('right')
-                    minder.setTheme('snow-compact');
-                    minder.select(minder.getRoot(), true);
-                    minder.execCommand('hand');
-                    minder.execCommand('Move', 'right')
-                    minder.refresh()
-                }, 500) //in
-    }
-
-    function loadKm() {
-        $.getScript('/assets/js/kity.min.js').done(function() {
-            $.getScript('/assets/js/kityminder.core.min.js').done(function() {
-                setTimeout(function() {
-                  [].forEach.call(document.querySelectorAll(".language-km"),
-                  function(target){initKm(target)})
-                    }, 1) //22
-            })
-        })
-    }
 
     var hasKm = false
 
@@ -61,16 +32,16 @@
         function(index) {
             var e = $(this)
             var p = e.parent()
-            if (e.hasClass('language-km')) {
+            if (e.hasClass('language-km')||e.hasClass('language-mm')||e.hasClass('mm')) {
                 p.addClass('language-km')
                 p.text(e.text())
-                p.css('height',(p.height()/1.8 + 100)+'px')
+                p.css('height', (p.height()) + 'px')
                 hasKm = true
                 return
             }
 
-            u = e.text()
             var text = e.text()
+
             text = (text || '')
                 .replace(/\{/g, '<b class="x-p x-p-l">｛ </b>')
                 .replace(/\}/g, '<b class="x-p x-p-r">｝</b>')
@@ -110,11 +81,44 @@
 
             }
             p.replaceWith('<blockquote class="markx" oncopy="return false"><p>' + r + '</p></blockquote>')
-                // console.log( r)
                 // console.log(this)
         })
 
-if(hasKm){
-  loadKm()
-}
+    if (hasKm) {
+        loadKm()
+    }
+
+    function initKm(p) {
+        var target = p
+        var minder = new kityminder.Minder();
+        var protocol = 'text';
+        var data = target.textContent;
+        target.textContent = null;
+        minder.renderTo(target);
+        minder.importData(protocol, data);
+        minder.disable();
+        setTimeout(
+                function() {
+                    minder.useTemplate('right')
+                    minder.setTheme('snow-compact');
+                    minder.select(minder.getRoot(), true);
+                    minder.execCommand('hand');
+                    minder.execCommand('Move', 'right')
+                    minder.refresh()
+                }, 500) //in
+    }
+
+    function loadKm() {
+        $.getScript('/assets/js/kity.min.js').done(function() {
+            $.getScript('/assets/js/kityminder.core.min.js').done(function() {
+                setTimeout(function() {
+                        [].forEach.call(document.querySelectorAll(".language-km"),
+                            function(target) {
+                                initKm(target)
+                            })
+                    }, 100) //22
+            })
+        })
+    }
+
 })()
