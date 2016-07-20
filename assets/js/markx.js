@@ -15,14 +15,60 @@
         return level;
     }
 
-    $('.remark-code-line').replaceWith(function(){
-      return $(this).text+'/n'
+    $('.remark-code-line').replaceWith(function() {
+        return $(this).text + '/n'
     })
 
+    $.ajaxSetup({
+        cache: true
+    });
+
+    function initKm(p) {
+        var target = p
+        var minder = new kityminder.Minder();
+        var protocol = 'text';
+        var data = target.textContent;
+        target.textContent = null;
+        minder.renderTo(target);
+        minder.importData(protocol, data);
+        minder.disable();
+        setTimeout(
+                function() {
+                    minder.useTemplate('right')
+                    minder.setTheme('snow-compact');
+                    minder.select(minder.getRoot(), true);
+                    minder.execCommand('hand');
+                    minder.execCommand('Move', 'right')
+                    minder.refresh()
+                }, 500) //in
+    }
+
+    function loadKm() {
+        $.getScript('/assets/js/kity.min.js').done(function() {
+            $.getScript('/assets/js/kityminder.core.min.js').done(function() {
+                setTimeout(function() {
+                  [].forEach.call(document.querySelectorAll(".language-km"),
+                  function(target){initKm(target)})
+                    }, 1) //22
+            })
+        })
+    }
+
+    var hasKm = false
+
     $("pre > code").each(
+
         function(index) {
             var e = $(this)
             var p = e.parent()
+            if (e.hasClass('language-km')) {
+                p.addClass('language-km')
+                p.text(e.text())
+                p.css('height',(p.height()/1.8 + 100)+'px')
+                hasKm = true
+                return
+            }
+
             u = e.text()
             var text = e.text()
             text = (text || '')
@@ -45,13 +91,13 @@
 
             for (var i = 0; i < t.length; i++) {
                 // console.log(t[i])
-                var ti = (t[i]||'').replace(/(\s*$)/g, ''),
+                var ti = (t[i] || '').replace(/(\s*$)/g, ''),
                     si = ti.trim(),
                     left_length = (ti || '').length - (si || '').length
                 if (si.match(/^[\`\,\-]/)) {
-                  si = si.replace(/^[\`\,]+/, '')
+                    si = si.replace(/^[\`\,]+/, '')
                 } else {
-                  level = getLevel(ti)
+                    level = getLevel(ti)
                 }
                 r += '<span class="x x' + level % 5 + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
 
@@ -66,7 +112,9 @@
             p.replaceWith('<blockquote class="markx" oncopy="return false"><p>' + r + '</p></blockquote>')
                 // console.log( r)
                 // console.log(this)
-        }
-    )
+        })
 
+if(hasKm){
+  loadKm()
+}
 })()

@@ -1,6 +1,4 @@
 User-agent: *
 Allow: /post/
-Disallow: /forum/
-Disallow: /wp-*
 
 Sitemap: http://zaimu.tingdao.org/sitemap2.xml

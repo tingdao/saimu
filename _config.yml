@@ -1,3 +1,5 @@
+markdown_ext: "md"
+
 markdown: kramdown
 kramdown:
   input: GFM

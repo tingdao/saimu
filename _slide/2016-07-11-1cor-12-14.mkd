@@ -3,8 +3,21 @@ title: 1cor.12-14
 date0: 2016/07/11
 tags: ☆
 ---
+class: center inverse
 
-![](/img/1cor.png)
+![](/img/slide/white3.jpg)
+
+???
+闭合原理
+
+---
+background-image: url(/img/1cor.png)
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
+
+---
+
 
 ---
 
@@ -17,4 +30,8 @@ tags: ☆
     14:20-26 见证
 14:26-| 次序-敬拜
 ```
+---
+
+![](/img/slide/tongs.png)
+
 ---
