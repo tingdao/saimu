@@ -45,6 +45,6 @@ $("p code").each(
     if(url){
 		$(this).replaceWith('<a href="'+url+'">'+title+'</a>')
   }
-		// console.log( title)
+		console.log( title)
 	}
 )

@@ -204,9 +204,16 @@ margin-bottom: 1.6em;
 .text a:hover{
 text-decoration: underline;
 }
+
+.x em, .x strong, .x q{
+  color : inherit
+}
+
 em, strong,
 q,code{
-color: #678CB1;
+/*color: #678CB1;*/
+padding-left: .3em;
+padding-right: .3em;
 }
 
 pre, blockquote, table{

@@ -5,6 +5,8 @@
     var V = "\t";
     var TABREG = new RegExp('^(' + String.fromCharCode(32) + '|' + String.fromCharCode(160) + '){4}')
 
+    var uid = 100000;
+
     $.ajaxSetup({
             cache: true
         })
@@ -36,6 +38,7 @@
             if (e.hasClass('language-km') || e.hasClass('language-mm') || e.hasClass('mm')) {
                 p.addClass('language-km')
                 p.text(e.text())
+                p.id || p.attr('id', ++uid+'')
                 hasKm = true
                 return
             }
@@ -70,7 +73,7 @@
                 } else {
                     level = getXLevel(ti)
                 }
-                si = $(marked(si)).html() || '<br/>'
+                si = $(marked(si)).html()
                 r += '<span class="x x' + level % 5 + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
 
                 // var space = ''
@@ -86,7 +89,7 @@
         })
 
     if (hasKm) {
-        loadKm()
+        loadJm()
     }
 
     function decodeWrap(text) {
@@ -151,11 +154,11 @@
         return level;
     }
 
+
     function getNode(line) {
         return {
-            data: {
-                text: decodeWrap(line.replace(/^(\t|\x20{4})+/, ""))
-            }
+            id: ++uid + '',
+            topic: decodeWrap(line.replace(/^(\t|\x20{4})+/, ""))
         };
     }
 
@@ -193,43 +196,36 @@
         return json;
     }
 
-
-    function initKm(target, height) {
+    function initJm(target, height) {
         var $target = $(target),
-            minder = new kityminder.Minder({
-                enableKeyReceiver: false,
-                enableAnimation: false
-            }),
-            protocol = 'json',
             data = $target.data('text') || target.textContent,
-            json = decodeText(data);
-        json.template = 'right'
-        json.theme = 'classic-compact'
-            // console.log(json)
+            json = decodeText(data),
 
-        height = height || ($target.height())
+        height = height || ($target.height());
             // console.log(height)
         $target.css('height', height + 'px')
         $target.empty()
-        minder.renderTo(target);
-        // minder.setTheme('classic-compact');
-        minder.importData(protocol, JSON.stringify(json));
-        minder.disable();
+
+        var options = {
+          container:target.id,
+          editable:false,
+          theme:'primary',
+          mode :'side'
+        }
+        var jd = {meta:{name:'a'},format:'node_tree',data:json}
+console.log(jd)
+        var jm = jsMind.show(options, jd);
+
         $target.data({
-            km: minder,
+            // km: minder,
             text: data,
             init: function() {
                 initKm(target)
             }
         })
-        minder.select(minder.getRoot(), true);
-        minder.execCommand('hand');
-        minder.execCommand('Move', 'right')
-        minder.refresh()
-
     }
 
-    window.initKm = initKm
+    // window.initKm = initKm
 
     function loadKm() {
         $.getScript('/assets/js/kity.min.js').done(function() {
@@ -244,5 +240,19 @@
             })
         })
     }
+
+
+    function loadJm() {
+        $.getScript('/assets/js/jsmind.js').done(function() {
+            setTimeout(function() {
+                    // if(window.isSlide) {return}
+                    [].forEach.call(document.querySelectorAll(".language-km"),
+                        function(target) {
+initJm(target)
+                        })
+                }, 100) //22
+        })
+    }
+
 
 })()
