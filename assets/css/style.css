@@ -1,5 +1,8 @@
 @import 'base.css';
-
+@import 'mermaid.css';
+.mermaid{
+  background: white;
+}
 .km-view {
     font-family: "STHeitiSC-Light", "STHeiti", "Hei", "Heiti SC", "Microsoft Yahei", Arial, sans-serif;
     -webkit-user-select: none;
@@ -24,7 +27,10 @@
 .x3{color: orange}
 
 
-.x{display: block} /*table-cell*/
+.x{display: block;
+  margin-bottom: .3em;
+  line-height: 1.25em;
+  } /*table-cell*/
 .x:first-letter{
 }
 .x-p, .x-ps{

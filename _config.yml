@@ -16,7 +16,7 @@ permalink: /post/:year:month:day/
 exclude: ["README.md", "Rakefile"]
 # auto: true
 highlighter: null
-future: false
+future: ture
 # incremental: true
 
 collections:

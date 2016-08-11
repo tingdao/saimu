@@ -7,14 +7,14 @@ permalink: /about/
 
 **zaimu**<span><strong>@</strong><span>**tingdao.org**
 
-rss: feeds.tingdao.org/pftsao
 
 ---------
 
 
+--------
+
+rss: feeds.tingdao.org/pftsao
 
 ----------
 
-本站作品均为原创, 所有权力保留.
-
-本站作品采用[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。
+本站作品均为原创, 采用[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。

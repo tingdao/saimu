@@ -3,6 +3,11 @@ title: stdd
 tags: ☆
 
 ---
+name: 1cor0
+background-image: url(/img/1cor.png)
+background-position: center;
+background-repeat: no-repeat;
+background-size: contain;
 
 {% raw %}
 

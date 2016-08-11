@@ -27,6 +27,7 @@
 
 
     window.hasKm = false
+    window.hasChart = false
 
     $("pre > code").each(
 
@@ -37,6 +38,13 @@
                 p.addClass('language-km')
                 p.text(e.text())
                 hasKm = true
+                return
+            }
+
+            if (e.hasClass('language-chart')||e.hasClass('language-mermaid')) {
+                p.addClass('mermaid')
+                p.text(e.text())
+                hasChart = true
                 return
             }
 
@@ -70,7 +78,8 @@
                 } else {
                     level = getXLevel(ti)
                 }
-                si = $(marked(si)).html() || '<br/>'
+                // si = $(marked(si)).html() || '<br/>'
+                si = si || '<br/>'
                 r += '<span class="x x' + level % 5 + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
 
                 // var space = ''
@@ -85,9 +94,10 @@
                 // console.log(this)
         })
 
-    if (hasKm) {
-        loadKm()
-    }
+    hasKm && loadKm();
+    hasChart = hasChart ||  $('.mermaid').length
+
+    hasChart && loadMermaid();
 
     function decodeWrap(text) {
         if (!text) {
@@ -242,6 +252,15 @@
                             })
                     }, 100) //22
             })
+        })
+    }
+
+    function loadMermaid() {
+      if(window.mermaid) {return}
+      $.getScript('/assets/js/mermaid.min.js').done(function() {
+          setTimeout(function(){
+          mermaid.initialize({startOnLoad:false})
+          mermaid.init(undefined,$('.mermaid'))}, 10)
         })
     }
 

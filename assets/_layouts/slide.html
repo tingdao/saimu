@@ -12,13 +12,25 @@ layout: init
     background: black !important;
   }
   .remark-slide-content{
-    font-size: 32px !important;
+    font-size: 36px;
     /*color: black;*/
-
+    line-height: 1.25em;
     background-color: #293134;
     padding-left: 1em !important;
     padding-right: 0.5em !important;
 
+  }
+  .big{
+    font-size: 40px;
+  }
+  .small{
+    font-size: 32px;
+  }
+
+  pre, blockquote, table{
+  padding-left: .5em;
+  padding-right: 0em !important;
+  margin: 0 !important;
   }
 
   pre.language-km{
@@ -41,8 +53,8 @@ layout: init
     margin-bottom: 0;
     margin-top: 10px;
   }
-  h1 { font-size: 3.5em; }
-  h2 { font-size: 3em; }
+  h1 { font-size: 2.7em; }
+  h2 { font-size: 2em; }
   h3 { font-size: 1.6em; }
   .inverse {
     background: white;
@@ -64,6 +76,8 @@ layout: init
     color: #F92672;
     text-decoration: none;
   }
+
+
   .task {
     float: right;
     font-size: 0.9em;
@@ -119,13 +133,24 @@ name: default
 
   })
 
-  slideshow.on('showSlide', function (slide) {
-    if(!hasKm){return}
-    setTimeout(function(){
+  slideshow.on('afterShowSlide', function (slide) {
+    if(window.hasChart){
+      console.log(888)
+      mermaid.init(undefined, $('.remark-visible .mermaid'));
+    }
+
+    if(window.hasKm){
     var $t = $('.remark-visible .language-km'),
     t = $t[0];
     t && initKm(t, $('.remark-visible .remark-slide').height())
-  },100)
+  }
 })
   window.isSlide = true;
+
 </script>
+<script src="/assets/js/mermaid.min.js"></script>
+<script>
+mermaid.initialize(
+  {startOnLoad: false,
+  cloneCssStyles: false}
+)</script>
