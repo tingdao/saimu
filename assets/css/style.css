@@ -211,10 +211,13 @@ margin-bottom: 1.6em;
 text-decoration: underline;
 }
 
+.text .markx{
+  min-width: 25em;
+}
+
 .x em, .x strong, .x q{
   color : inherit
 }
-
 em, strong,
 q,code{
 /*color: #678CB1;*/
