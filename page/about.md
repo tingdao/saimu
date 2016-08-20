@@ -5,7 +5,7 @@ permalink: /about/
 
 {{site.title}}目前关注的是教会仪式及圣经神学, 欢迎相关领域的前辈指正.
 
-**zaimu**<span><strong>@</strong><span>**tingdao.org**
+**saimu**<span><strong>@</strong><span>**tingdao.org**
 
 
 ---------

@@ -74,13 +74,13 @@ defaults:
     values:
       category: 其它
 
-title : "[塞牧.在木]"
+title : "[塞牧]"
 tagline: "@听稻"
 author :
   name : "[塞牧]"
-  email : "zaimu AT tingdao.org"
+  email : "saimu AT tingdao.org"
 
-url: http://zaimu.tingdao.org
+url: http://saimu.tingdao.org
 
 plugins_dir:  ./assets/_plugins
 layouts_dir:  ./assets/_layouts
