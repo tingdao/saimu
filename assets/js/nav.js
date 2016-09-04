@@ -67,22 +67,30 @@ function fresh_list(cat, title){
   return function(){
   // console.log(cat[0][0])
 
-  if(title){
-    $('.nav-cat-title').text(title).attr('id', title)
-  }
-
-
-  $('.nav-post-list').each(function(index){
-    // console.log(index)
-    var ul = $('<ul></ul>')
-    for(var j in cat){
-      var post = cat[j]
-      ul.append('<li><a href="'+post[URL]+'">'+post[TITLE]+'</a></li>')
+    if(title){
+      $('.nav-cat-title').text(title).attr('id', title)
     }
-    $(this).empty().append(ul)
-    // }
-
-  })
-
+    $('.nav-post-list').each(function(index){
+      // console.log(index)
+      var ul = $('<ul></ul>')
+      for(var j in cat){
+        var post = cat[j]
+        ul.append('<li><a href="'+post[URL]+'">'+post[TITLE]+'</a></li>')
+      }
+      $(this).empty().append(ul)
+    })
+  }
 }
+
+$.ajaxSetup({
+        cache: true
+    })
+if( location.hostname.indexOf('tingdao') && location.pathname.indexOf('post') ){
+
+$.getScript("//hm.baidu.com/hm.js?2251d711953631d85fd5bf3842dbf72a")
+
+window.clicky_site_ids = window.clicky_site_ids || [];
+clicky_site_ids.push(100967986);
+$.getScript('//static.getclicky.com/js')
+
 }
