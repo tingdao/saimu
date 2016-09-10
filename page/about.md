@@ -3,7 +3,7 @@ title: about
 permalink: /about/
 ---
 
-{{site.title}}目前关注的是教会仪式及圣经神学, 欢迎相关领域的前辈指正.
+{{site.title}}目前主要关注的是教会仪式及圣经神学, 欢迎相关领域的前辈指正.
 
 **saimu**<span><strong>@</strong><span>**tingdao.org**
 
