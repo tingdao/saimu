@@ -74,10 +74,10 @@ defaults:
     values:
       category: 其它
 
-title : "[塞牧]"
+title : "@pftsao"
 tagline: "@听稻"
 author :
-  name : "[塞牧]"
+  name : "@pftsao"
   email : "saimu AT tingdao.org"
 
 url: http://saimu.tingdao.org
