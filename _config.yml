@@ -78,9 +78,9 @@ title : "@pftsao"
 tagline: "@听稻"
 author :
   name : "@pftsao"
-  email : "saimu AT tingdao.org"
+  email : "pftsao AT tingdao.org"
 
-url: http://saimu.tingdao.org
+url: http://pftsao.tingdao.org
 
 plugins_dir:  ./assets/_plugins
 layouts_dir:  ./assets/_layouts
