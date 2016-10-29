@@ -74,10 +74,10 @@ defaults:
     values:
       category: 其它
 
-title : "@pftsao"
+title : "@在炑"
 tagline: "@听稻"
 author :
-  name : "@pftsao"
+  name : "@在炑"
   email : "pftsao AT tingdao.org"
 
 url: http://pftsao.tingdao.org
