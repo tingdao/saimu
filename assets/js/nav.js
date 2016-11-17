@@ -87,10 +87,10 @@ $.ajaxSetup({
     })
 if( location.hostname.indexOf('tingdao') && location.pathname.indexOf('post') ){
 
-$.getScript("//hm.baidu.com/hm.js?2251d711953631d85fd5bf3842dbf72a")
-
-window.clicky_site_ids = window.clicky_site_ids || [];
-clicky_site_ids.push(100967986);
-$.getScript('//static.getclicky.com/js')
+$.getScript("//hm.baidu.com/hm.js?e90f8233c4646ec21aaf05e7065545c9")
+//
+// window.clicky_site_ids = window.clicky_site_ids || [];
+// clicky_site_ids.push(100967986);
+// $.getScript('//static.getclicky.com/js')
 
 }
