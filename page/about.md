@@ -17,7 +17,6 @@ permalink: /about/
 rss: feeds.tingdao.org/pftsao
 
 http://weibo.com/pftsao
-http://www.zhihu.com/people/pftsao
 
 ----------
 
