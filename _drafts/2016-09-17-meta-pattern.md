@@ -6,7 +6,7 @@ tags: ☆
 
 the Kindom pattern: a pattern of the patterns
 
-The following essay is tentative and exploratory, offered for your consideration. [在炑]
+The following essay is tentative and exploratory, offered for your consideration.
 
 If you are familiar with Mike Bull and the "Bible Matrix", you do know the patterns in the Bible. eg: Creation, Feasts, Covenant, Dominion, Tabernacle, Worship (of Covenant renewal), Sacrifice...
 
