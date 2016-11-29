@@ -1,5 +1,5 @@
 ---
-title: meta-pattern
+title: the Kindom pattern
 date0: 2016/09/17
 tags: ☆
 ---
@@ -101,7 +101,7 @@ Samson:
 
 What do you think?
 
-
+<!--
 
 
 
@@ -112,4 +112,4 @@ What do you think?
             3, 6:14-7:51, The temple and the palace
                 4, 8:1-11, The ark brought into the temple
             5, 8:12-61, Solomon's prayer
-        6,
+        6, -->
