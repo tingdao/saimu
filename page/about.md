@@ -7,7 +7,7 @@ permalink: /about/
 
 **pftsao**<span><strong>@</strong><span>**tingdao.org**
 
-@pftsao
+twitter.com/pftsao
 
 ---------
 
@@ -16,7 +16,6 @@ permalink: /about/
 
 rss: feeds.tingdao.org/pftsao
 
-http://weibo.com/pftsao
 
 ----------
 
