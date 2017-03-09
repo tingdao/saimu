@@ -12,4 +12,4 @@ title: log
 添加 km, remark
 
 2017-03-10:
--> tingdao.studio
+-> tingdao.org

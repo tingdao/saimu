@@ -78,8 +78,10 @@ title : "在木"
 tagline: "@听稻"
 author :
   name : "[在木]"
+  email : "zaimu@tingdao.org"
 
-url: http://zaimu.tingdao.studio
+url: http://zaimu.tingdao.org
+feed : http://feeds.tingdao.org/pftsao
 
 plugins_dir:  ./assets/_plugins
 layouts_dir:  ./assets/_layouts
@@ -91,8 +93,9 @@ path :
   archive: /archive
   cats : ''
   tags: ''
-  feed : http://feeds.tingdao.studio/pftsao
   js : /assets/js
   css: /assets/css
+
+
 timezone: Asia/Hong_Kong
 copyright: "©塞牧.在木.听稻. 2006-2016. All rights reserved."

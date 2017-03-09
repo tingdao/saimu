@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /post/
 
-Sitemap: http://zaimu.tingdao.studio/sitemap.xml
+Sitemap: http://zaimu.tingdao.org/sitemap.xml

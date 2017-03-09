@@ -3,10 +3,9 @@ title: about
 permalink: /about/
 ---
 
-{{site.title}}目前主要关注的是教会仪式及圣经神学, 欢迎相关领域的前辈指正.
+{{ site.title }}目前主要关注的是教会仪式及圣经神学, 欢迎相关领域的前辈指正.
 
-**zaimu**<span><strong>@</strong><span>**tingdao.studio**
-
+{{ site.author.email }}
 twitter.com/pftsao
 
 ---------
@@ -14,7 +13,7 @@ twitter.com/pftsao
 
 --------
 
-rss: feeds.tingdao.studio/pftsao
+rss: {{ site.feed }}
 
 
 ----------
