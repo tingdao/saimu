@@ -34,7 +34,6 @@ if(hash){
 }
 
 $('.meta .list a').click(function(){
-  console.log('111')
 hash_fresh( $(this)[0].hash )
 })
 
