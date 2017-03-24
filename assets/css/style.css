@@ -21,10 +21,11 @@
 }
 
 .x0{color: #fa8072}
-.x1{color: MediumSeaGreen}
-.x2{color: #678CB1}
-.x4{color: DarkGray} /*#EC7600*/
+.x1{color: #678CB1}
+.x2{color: MediumSeaGreen}
 .x3{color: orange}
+/*.x4{color: gold} /*#EC7600*/*/
+.x4{color: DarkGray} /*#EC7600*/
 
 
 .x{display: block;

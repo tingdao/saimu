@@ -101,13 +101,17 @@ lineStyles:
   h4: before: "~~~~"
 
   ul:
+    before: "~ ",
+    regexMatchBefore: "(?:~|\\*|\\+)\\s"
+    regexBefore: "(?:~|\\*|\\+|\\d+\\.)\\s"
+  ol:
     before: "- ",
     regexMatchBefore: "(?:-|\\*|\\+)\\s"
     regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s"
-  ol:
-    before: "1. ",
-    regexMatchBefore: "(?:\\d+\\.)\\s"
-    regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s"
+  # ol:
+  #   before: "1. ",
+  #   regexMatchBefore: "(?:\\d+\\.)\\s"
+  #   regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s"
 
   # task:
   #   before: "- [ ] ",
@@ -119,9 +123,9 @@ lineStyles:
   #   regexBefore: "(?:-|\\*|\\+|\\d+\\.)\\s*(?:\\[[xX ]])?\\s"
   blockquote: before: "> "
   task:
-    before: "`",
-    regexMatchBefore: "(?:\\`+|\\,+)"
-    regexBefore: "(?:\\`+|\\,+)"
+    before: "~ ",
+    regexMatchBefore: "(?:\\~+|\\,+)\\s"
+    regexBefore: "(?:\\~+|\\,+)\\s"
   taskdone:
     before: "[]",
     regexMatchBefore: "\\[]"

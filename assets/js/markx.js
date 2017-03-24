@@ -73,8 +73,8 @@
                 var ti = (t[i] || '').replace(/(\s*$)/g, ''),
                     si = ti.trim(),
                     left_length = (ti || '').length - (si || '').length
-                if (si.match(/^[\`\,\-]/)) {
-                    si = si.replace(/^[\`\,]+/, '')
+                if (si.match(/^[\`\,\~\-]/)) {
+                    si = si.replace(/^[\`\,\~]+/, '')
                 } else {
                     level = getXLevel(ti)
                 }
