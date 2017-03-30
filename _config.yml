@@ -56,9 +56,9 @@ defaults:
       category: 圣经
   -
     scope:
-      path: "_posts/查经"
+      path: "_posts/问答"
     values:
-      category: 查经
+      category: 问答
   -
     scope:
       path: "_posts/随笔"
@@ -75,13 +75,13 @@ defaults:
     values:
       category: 其它
 
-title : "在木"
+title : "塞牧"
 tagline: "@听稻"
 author :
-  name : "[在木]"
-  email : "zaimu@tingdao.org"
+  name : "[塞牧]"
+  email : "pftsao@tingdao.org"
 
-url: http://zaimu.tingdao.org
+url: http://pftsao.tingdao.org
 feed : http://feeds.tingdao.org/pftsao
 
 plugins_dir:  ./assets/_plugins
