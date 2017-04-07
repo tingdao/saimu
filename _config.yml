@@ -79,10 +79,10 @@ title : "塞牧"
 tagline: "@听稻"
 author :
   name : "[塞牧]"
-  email : "pftsao@tingdao.org"
+  email : "pftsao@tingdao.studio"
 
-url: http://pftsao.tingdao.org
-feed : http://feeds.tingdao.org/pftsao
+url: http://pftsao.tingdao.studio
+feed : http://feeds.tingdao.studio/pftsao
 
 plugins_dir:  ./assets/_plugins
 layouts_dir:  ./assets/_layouts
