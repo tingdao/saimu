@@ -3,7 +3,7 @@ title: about
 permalink: /about/
 ---
 
-{{ site.title }}目前主要关注的是圣经神学, 欢迎来信交流.
+[{{ site.title }}]目前主要关注的是圣经神学, 欢迎来信交流.
 
 {{ site.author.email }}
 twitter.com/pftsao
