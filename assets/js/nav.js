@@ -88,8 +88,8 @@ function fresh_list(cat, title){
 //
 // $.getScript("//hm.baidu.com/hm.js?e90f8233c4646ec21aaf05e7065545c9")
 // //
-window.clicky_site_ids = window.clicky_site_ids || [];
-clicky_site_ids.push(100967986);
+// window.clicky_site_ids = window.clicky_site_ids || [];
+// clicky_site_ids.push(100967986);
 // $.getScript('//static.getclicky.com/js')
 //
 // }
