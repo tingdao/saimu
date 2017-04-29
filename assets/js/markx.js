@@ -3,7 +3,7 @@
         LINE_ENDING_SPLITER = /\r\n|\r|\n/
 
     var V = "\t";
-    var TABREG = new RegExp('^(' + String.fromCharCode(32) + '|' + String.fromCharCode(160) + '){4}')
+    var TABREG = new RegExp('^(' + String.fromCharCode(32) + '|' + String.fromCharCode(160) + '){2}')
 
     $.ajaxSetup({
             cache: true
@@ -66,21 +66,28 @@
             t.pop()
 
             var r = "",
-                level = 0;
+                level = 0,
+                level0= 0;
+
 
             for (var i = 0; i < t.length; i++) {
                 // console.log(t[i])
                 var ti = (t[i] || '').replace(/(\s*$)/g, ''),
                     si = ti.trim(),
-                    left_length = (ti || '').length - (si || '').length
+                    left_length = (ti || '').length - (si || '').length,
+                    li = getXLevel(ti)
                 if (si.match(/^[\`\,\~\-]/)) {
                     si = si.replace(/^[\`\,\~]+/, '')
                 } else {
-                    level = getXLevel(ti)
+                    if((level0-li)%2==0){
+                      level= li
+                    }
+
                 }
+                level0 = li
                 // si = $(marked(si)).html() || '<br/>'
                 si = si || '<br/>'
-                r += '<span class="x x' + level % 5 + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
+                r += '<span class="x x' + (Math.floor(level/2 )%5) + '" style="margin-left:' + left_length / 2 + 'em">' + si + '</span>'
 
                 // var space = ''
                 // for (var s = 0; s < left_length; s++) {
