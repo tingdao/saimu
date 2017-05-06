@@ -8,6 +8,7 @@ permalink: /about/
 {{ site.author.email }}
 twitter.com/pftsao
 rss: {{ site.feed }}
+www.zhihu.com/people/pftsao/activities
 
 ---------
 

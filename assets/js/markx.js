@@ -53,7 +53,7 @@
             text = (text || '')
                 .replace(/\{/g, '<b class="x-p x-p-l">｛ </b>')
                 .replace(/\}/g, '<b class="x-p x-p-r">｝</b>')
-                .replace(/([\|\[\]\(\)])/g,
+                .replace(/([\|\[\]\(\)\@\#])/g,
                     function(x) {
                         x = String.fromCharCode(x.charCodeAt(0) + 65248);
                         return '<a class="x-ps">' + x + '</a>'
@@ -76,8 +76,8 @@
                     si = ti.trim(),
                     left_length = (ti || '').length - (si || '').length,
                     li = getXLevel(ti)
-                if (si.match(/^[\`\,\~\-]/)) {
-                    si = si.replace(/^[\`\,\~]+/, '')
+                if (si.match(/^[\`\^\,\~\-]/)) {
+                    si = si.replace(/^[\`\,\^]+/, '')
                 } else {
                     if((level0-li)%2==0){
                       level= li
