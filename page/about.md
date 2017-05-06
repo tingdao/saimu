@@ -5,10 +5,10 @@ permalink: /about/
 
 [{{ site.title }}]目前主要关注的是圣经神学, 欢迎来信交流.
 
-{{ site.author.email }}
-twitter.com/pftsao
-rss: {{ site.feed }}
-www.zhihu.com/people/pftsao/activities
+<{{ site.author.email }}>
+<http://twitter.com/pftsao>
+<http://zhihu.com/people/pftsao>
+rss: <{{ site.feed }}>
 
 ---------
 
@@ -18,7 +18,7 @@ www.zhihu.com/people/pftsao/activities
                 教会神学有一个系统, 并用经文来为各论点做证据. 圣经神学以圣经为系统, 而不是以圣经为证据.
             圣经神学认为圣经本身是神的话语, 神的话语远不仅仅是教义或者哲学, 而是生命之道, 所以通过对圣经的学习让神的话语来做工.
         教会神学最终以实用或理论为目的. 圣经神学以明白圣经为目的.
-    圣经神学真正的发展是近几十年的事情, 所以掌握的人很少, 但圣经神学是之后五百年的希望.
+    圣经神学真正的发展是近几十年的事情, 尚未走向教会, 但圣经神学是之后五百年的希望.
 
 ----------
 
