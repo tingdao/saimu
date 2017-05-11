@@ -131,11 +131,6 @@ lineStyles:
     regexMatchBefore: "\\[]"
     regexBefore: "\\[]"
 
-
-
-
-
-
 # image tag template
 imageTag: "![{alt}]({src})"
 # use relative path to image from the opened file
