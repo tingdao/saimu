@@ -163,7 +163,7 @@ font-family: Lucida Sans Unicode, Lucida Grande, Tohoma, \5E7C\5706, Microsoft Y
 }
 
 #header h1::after{
-content: "";
+content: "@tingdao.studio";
 height: 10px;
 color: #fa8072;
 font-size: .618em;
