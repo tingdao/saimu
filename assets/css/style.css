@@ -93,10 +93,11 @@ table, th, td{
 }*/
 
 body {
-  font-size: 1.1em;
+  font-size: 1em;
   lne-height: 1.2;
   color:#E0E2E4;background:#293134;
 /*color:#657A81;background:#FDF6E3;*/
+/*color:black;background:white*/
 }
 body, button, input, select, textarea { font-family: Lucida Sans Unicode, Lucida Grande, Tohoma,  Microsoft Yahei, \5E7C\5706, sans-serif; }
 

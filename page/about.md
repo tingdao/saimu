@@ -25,7 +25,7 @@ rss: <{{ site.feed }}>
 
 ----------
 
-主要思想来源:
+<!-- 主要思想来源:
 
     第一日: 普兰丁格
         第二日: 唐崇荣, 陈佐人, IIIM
@@ -33,4 +33,4 @@ rss: <{{ site.feed }}>
                 第四日: 奥古斯丁, 加尔文
             第五日: Van Til, Poythress
         第六日: 霍志恒, James Jordan, Mike Bull, Ralph Smith, Glen Scrivener
-    ...
+    ... -->
