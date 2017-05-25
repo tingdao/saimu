@@ -71,17 +71,22 @@ color: #46433A;
 
 .series a, .series .active a{
   font-size: 1em;
+  /*text-decoration: underline;*/
 }
 .series .active a{
   color: grey;
   /*text-decoration: underline;*/
 }
-/*.series a:visited{
-color: grey
-}*/
+
+.series a::before{
+content: "§";
+/*color: #46433A; ◊ */
+font-size: 1.2em;
+}
 .series li{
   padding-right : .6em;
 }
+
 
 blockquote p{
   /*white-space: pre-line;*/
