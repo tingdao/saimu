@@ -11,6 +11,20 @@ rss: <{{ site.feed }}>
 
 <!-- [微信订阅](/assets/qrcode.jpg) -->
 
+<form action="//studio.us16.list-manage.com/subscribe/post?u=1bf025d596d49ab0e6f375672&amp;id=b58ad19503" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+    <div id="mc_embed_signup_scroll">
+
+<div class="mc-field-group">
+	<label for="mce-EMAIL">您的邮件地址是? </label><br/>
+	<input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+</div>
+    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_1bf025d596d49ab0e6f375672_b58ad19503" tabindex="-1" value=""></div>
+    <div class="clear"><input type="submit" value="邮件订阅" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    </div>
+</form>
+
+--------
+
 本站作品均为原创, 采用[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。
 
 ---------
