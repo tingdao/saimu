@@ -1,0 +1,11 @@
+---
+title: 1cor.12-14
+date0: 2016/07/11
+tags:
+---
+name: 1cor
+```
+
+```
+---
+name: day5
