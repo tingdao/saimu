@@ -8,7 +8,7 @@ permalink: /about/
 <{{ site.author.email }}>
 <http://twitter.com/pftsao>
 rss: <{{ site.feed }}>
-<!-- [微信公众号订阅](/assets/qrcode.jpg) -->
+[微信公众号订阅](/assets/qrcode.jpg)
 
 <form action="//studio.us16.list-manage.com/subscribe/post?u=1bf025d596d49ab0e6f375672&amp;id=b58ad19503" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
