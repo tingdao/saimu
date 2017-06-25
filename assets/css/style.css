@@ -174,12 +174,12 @@ font-family: Lucida Sans Unicode, Lucida Grande, Tohoma, \5E7C\5706, Microsoft Y
   color: #46433A; /*gold;*/
 }
 
-#header h1::after{
+/*#header h1::after{
 content: "@tingdao.studio";
 height: 10px;
 color: #46433A;
 font-size: .618em;
-}
+}*/
 #header h1 a:hover{
 text-decoration: none;
 border-bottom: 3px solid;
