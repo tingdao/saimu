@@ -8,7 +8,7 @@ permalink: /about/
 <{{ site.author.email }}>
 <http://twitter.com/pftsao>
 rss: <{{ site.feed }}>
-<!-- [微信公众号订阅](/assets/qrcode.jpg) -->
+[微信公众号订阅](/assets/qrcode.jpg)
 
 <form action="//studio.us16.list-manage.com/subscribe/post?u=1bf025d596d49ab0e6f375672&amp;id=b58ad19503" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
@@ -24,7 +24,7 @@ rss: <{{ site.feed }}>
 
 --------
 
-本站作品均为原创, 采用[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)进行许可。
+本站作品均为原创, 转载请遵守[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)。
 
 ---------
 
