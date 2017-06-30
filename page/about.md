@@ -24,7 +24,7 @@ rss: <{{ site.feed }}>
 
 --------
 
-本站作品均为原创, 转载请遵守[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)。
+本站作品均为原创, 授权是[知识共享署名-非商业性使用-禁止演绎 3.0 Unported许可协议](http://creativecommons.org/licenses/by-nc-nd/3.0/)。
 
 ---------
 
