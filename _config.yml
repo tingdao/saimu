@@ -12,7 +12,6 @@ kramdown:
 # redcarpet:
 #   extensions: [fenced_code_blocks, autolink, tables,  hard_wrap, with_toc_data, strikethrough, lax_spacing, superscript]
 
-
 permalink: /post/:year:month:day/
 exclude: ["README.md", "Rakefile"]
 # auto: true
