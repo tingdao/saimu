@@ -38,6 +38,14 @@ rss: <{{ site.feed }}>
 
 ----------
 
+<https://www.firstthings.com>
+<https://theopolisinstitute.com>
+<http://www.biblicalhorizons.com>
+<http://www.bullartistry.com.au/wp/>
+<http://www.preteristarchive.com>
+<http://berith.org>
+<http://barach.us>
+
 <!-- 主要思想来源:
 
     第一日: 普兰丁格
