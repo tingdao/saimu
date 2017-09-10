@@ -78,13 +78,16 @@ color: #46433A;
   /*text-decoration: underline;*/
 }
 
-.series a::before{
-content: "§";
-/*color: #46433A; ◊ */
-font-size: 1.2em;
-}
+
 .series li{
   padding-right : .6em;
+}
+
+.series ul{margin-bottom : 1em}
+.series li::before{
+content: "#";
+/*color: #46433A; ◊ */
+font-size: 1.2em;
 }
 
 
