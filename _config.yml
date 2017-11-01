@@ -26,8 +26,16 @@ collections:
   slide:
     output: true
     permalink: /slide/:year:month:day/
+  drafts:
+    output: true
+    permalink: /draft/:year:month:day/
 
 defaults:
+  -
+    scope:
+      path: "_drafts"
+    values:
+      layout: "page"
   -
     scope:
       path: "_posts"
